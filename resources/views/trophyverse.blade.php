@@ -587,8 +587,28 @@
         </section>
 
         <!-- PETA INDONESIA -->
-        <div class="flex items-center justify-center mt-12">
+        <div class="flex items-center justify-center mt-12 relative">
+            <!-- Peta Indonesia -->
             <img src="{{ asset('image/IND.png') }}" alt="MAP INDONESIA" class="w-[95%] h-auto">
+
+            <!-- Gambar Pengguna -->
+            <div class="absolute" style="top: 20%; left: 45%;">
+                <img src="{{ asset('image/fotoFormal/download (2).jpg') }}" alt="User 1" class="w-16 h-16 rounded-full">
+            </div>
+
+            <div class="absolute" style="top: 40%; right: 11%;">
+                <img src="{{ asset('image/fotoFormal/download (4).jpg') }}" alt="User 2" class="w-[2.7rem] h-[2.7rem] rounded-full">
+            </div>
+
+            <div class="absolute" style="top: 55%; left: 20%;">
+                <img src="{{ asset('image/fotoFormal/download (3).jpg') }}" alt="User 3" class="w-[3rem] h-[3rem] rounded-full">
+            </div>
+
+            <div class="absolute" style="top: 75%; left: 30%;">
+                <img src="{{ asset('image/fotoFormal/download (5).jpg') }}" alt="User 1" class="w-16 h-16 rounded-full">
+            </div>
+
+            <!-- Tambahkan lebih banyak gambar pengguna sesuai kebutuhan -->
         </div>
 
         <!-- TESTI MONY -->
@@ -619,10 +639,10 @@
                                     </p>
                                     <p class="mt-8"> standard dummy text ever <br> since the 1500s.</p>
                                     <div class="flex items-center mt-4">
-                                        <img src="{{ url('image/ARW.png') }}" alt="Person 1"
+                                        <img src="{{ url('image/fotoFormal/download (2).jpg') }}" alt="Person 1"
                                             class="w-12 h-12 rounded-full object-cover mr-3">
                                         <div class="flex flex-col">
-                                            <span class="font-semibold">Mrs. Diana Rivera</span>
+                                            <span class="font-semibold">Mr. Reza Anonim</span>
                                             <span class="text-yellow-500">★★★★☆</span>
                                         </div>
 
@@ -652,10 +672,10 @@
                                     </p>
                                     <p class="mt-8"> standard dummy text ever <br> since the 1500s.</p>
                                     <div class="flex items-center mt-4">
-                                        <img src="{{ url('image/ARW.png') }}" alt="Person 1"
+                                        <img src="{{ url('image/fotoFormal/download.jpg') }}" alt="Person 1"
                                             class="w-12 h-12 rounded-full object-cover mr-3">
                                         <div class="flex flex-col">
-                                            <span class="font-semibold">Mrs. Diana Rivera</span>
+                                            <span class="font-semibold">Mrs. Diana Anonim</span>
                                             <span class="text-yellow-500">★★★★☆</span>
                                         </div>
 
@@ -684,10 +704,10 @@
                                     </p>
                                     <p class="mt-8"> standard dummy text ever <br> since the 1500s.</p>
                                     <div class="flex items-center mt-4">
-                                        <img src="{{ url('image/ARW.png') }}" alt="Person 1"
+                                        <img src="{{ url('image/fotoFormal/download (1).jpg') }}" alt="Person 1"
                                             class="w-12 h-12 rounded-full object-cover mr-3">
                                         <div class="flex flex-col">
-                                            <span class="font-semibold">Mrs. Diana Rivera</span>
+                                            <span class="font-semibold">Mr. Toto Anonim</span>
                                             <span class="text-yellow-500">★★★★☆</span>
                                         </div>
 
