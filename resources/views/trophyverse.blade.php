@@ -398,194 +398,194 @@
 
         <!-- slide swipe hasil testimoni -->
         <section class="bg-[#131313] text-white py-12">
-            <div class="container mx-auto py-8">
-                <!-- Main Swiper Slide -->
-                <div id="swiperContainerMain" class="swiper-container my-8 overflow-hidden">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/a.png') }}" alt="Main Slide"
-                                class="w-[600px] h-[450px] object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/ab.png') }}" alt="Main Slide"
-                                class="w-[600px] h-[450px] object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/ac.png') }}" alt="Main Slide"
-                                class="w-[600px] h-[450px] object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/ad.png') }}" alt="Main Slide"
-                                class="w-[600px] h-[450px] object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/af.png') }}" alt="Main Slide"
-                                class="w-[600px] h-[450px] object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/ag.png') }}" alt="Main Slide"
-                                class="w-[600px] h-[450px] object-cover rounded-lg">
-                        </div>
-
-                    </div>
+    <div class="container mx-auto py-8">
+        <!-- Main Swiper Slide -->
+        <div id="swiperContainerMain" class="swiper-container my-8 overflow-hidden">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/a.jpg') }}" alt="Main Slide"
+                        class="w-[600px] h-[450px] object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/ab.jpg') }}" alt="Main Slide"
+                        class="w-[600px] h-[450px] object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/ac.jpg') }}" alt="Main Slide"
+                        class="w-[600px] h-[450px] object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/ad.jpg') }}" alt="Main Slide"
+                        class="w-[600px] h-[450px] object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/af.jpg') }}" alt="Main Slide"
+                        class="w-[600px] h-[450px] object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/ag.jpg') }}" alt="Main Slide"
+                        class="w-[600px] h-[450px] object-cover rounded-lg">
                 </div>
 
-                <!-- Row of Smaller Slides (Swipable) -->
-                <div id="swiperContainerSmall" class="swiper-container my-8 overflow-hidden">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/ab.png') }}" alt="Small Slide 1"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/ac.png') }}" alt="Small Slide 2"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/ad.png') }}" alt="Small Slide 3"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/af.png') }}" alt="Small Slide 4"
-                                class="w-60 h-40object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/ag.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/b.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/c.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/d.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/e.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/f.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/g.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/h.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/i.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/j.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/k.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/l.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/o.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/p.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                    </div>
-                </div>
+            </div>
+        </div>
 
-                <div id="swiperContainerSmallPart2" class="swiper-container my-8 overflow-hidden">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/z.png') }}" alt="Small Slide 1"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/x.png') }}" alt="Small Slide 2"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/w.png') }}" alt="Small Slide 3"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/v.png') }}" alt="Small Slide 4"
-                                class="w-60 h-40object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/u.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/t.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/s.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/r.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/q.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/p.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/o.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/n.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/l.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/j.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/i.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/h.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/g.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/f.png') }}" alt="Small Slide 5"
-                                class="w-60 h-40 object-cover rounded-lg">
-                        </div>
-                    </div>
+        <!-- Row of Smaller Slides (Swipable) -->
+        <div id="swiperContainerSmall" class="swiper-container my-8 overflow-hidden">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/ab.jpg') }}" alt="Small Slide 1"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/ac.jpg') }}" alt="Small Slide 2"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/ad.jpg') }}" alt="Small Slide 3"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/af.jpg') }}" alt="Small Slide 4"
+                        class="w-60 h-40object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/ag.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/b.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/c.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/d.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/e.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/f.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/g.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/h.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/i.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/j.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/k.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/l.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/o.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/p.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
                 </div>
             </div>
-        </section>
+        </div>
+
+        <div id="swiperContainerSmallPart2" class="swiper-container my-8 overflow-hidden">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/z.jpg') }}" alt="Small Slide 1"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/x.jpg') }}" alt="Small Slide 2"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/w.jpg') }}" alt="Small Slide 3"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/v.jpg') }}" alt="Small Slide 4"
+                        class="w-60 h-40object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/u.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/t.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/s.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/r.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/q.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/p.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/o.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/n.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/l.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/j.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/i.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/h.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/g.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="{{ asset('image/foto/f.jpg') }}" alt="Small Slide 5"
+                        class="w-60 h-40 object-cover rounded-lg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- PETA INDONESIA -->
         <div class="flex items-center justify-center mt-12 relative">
