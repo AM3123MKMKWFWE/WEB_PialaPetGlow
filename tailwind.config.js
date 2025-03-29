@@ -11,6 +11,22 @@ export default {
         'impact': ['Impact', 'sans-serif'], // Tailwind is case-sensitive, use 'impact' in lowercase
       }
     },
+    screens: {
+      's': '320px', // 👈 custom breakpoint
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
+    fontFamily: {
+      'impact': ['Impact', 'sans-serif'],
+      'futura-heavy': ['Futura Heavy', 'sans-serif'],
+      'futura-light': ['Futura Light', 'sans-serif'],
+      'futura-medium': ['Futura Medium', 'sans-serif'],
+      'impacted': ['Impacted', 'sans-serif'],
+      'unicode-impact': ['unicode.impact', 'sans-serif'],
+  },
   },
   plugins: [],
 }

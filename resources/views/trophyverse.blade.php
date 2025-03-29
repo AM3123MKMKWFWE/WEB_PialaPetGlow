@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> -->
-     @vite('resources/css/app.css')
+    @vite('resources/css/app.css')
     <title>Tailwind CSS Demo</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!--    test baru  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
 
 </head>
 
@@ -23,13 +24,16 @@
     <!-- Header -->
     <header style="background-color: #131313;" class="text-white py-4">
         <div class="container mx-auto flex justify-between items-center">
-            <div class="h-auto w-[15%]"> <!-- Parent container width set to 10% -->
+            <div class="h-auto 2xl:w-[30%] xl:w-[25%] lg:w-[25%] md:w-[27%] s:w-[50%]">
+                <!-- Parent container width set to 10% -->
                 <img src="{{ asset('image/LOGO TRV.png') }}" alt="Logo" class="w-[100%] h-auto">
                 <!-- Set a fixed width and automatic height -->
             </div>
 
 
-            <button class="grid grid-cols-2 items-center justify-center w-16 h-16 rounded-full gap-[-5rem]">
+            <button
+                class="grid grid-cols-2 items-center justify-center 
+                    2xl:w-12 xl:w-12 lg:w-16 s:w-8 md:w-12  2xl:h-12 xl:h-12 lg:h-16 s:h-8 md:h-12   rounded-full gap-[-6rem]">
                 <div>
                     <span class="block w-2.5 h-2.5 bg-white rounded-full"></span>
                 </div>
@@ -50,37 +54,47 @@
 
     <!-- Hero Section -->
     <section style="background-color: #131313;" class=" text-white py-16 text-center">
-        <div class="font-impact text-[12rem] leading-[1] flex justify-center items-center gap-4">
+        <div class="font-impact 2xl:text-[12rem] 2xl:leading-[1] 
+                    xl:text-[12rem] xl:leading-[1]
+                    lg:text-[10rem] lg:leading-[1]
+                    md:text-[6rem] md:leading-[1] 
+                    s:text-[4rem] s:leading-[1] 
+                    flex justify-center items-center gap-4">
             <p class="text-white opacity-10">BORN TO</p>
             <p class="text-[#FFD586]">WIN</p>
         </div>
-        <div class=" leading-[1] flex justify-center items-center ">
+        <div
+            class=" flex s:flex-col md:flex-row justify-center items-center 2xl:gap-[10rem] xl:gap-[10rem] lg:gap-[6rem] md:gap-[4rem]  mt-8">
             <!-- Tulisan dan tombol kiri -->
-            <div class="text-center text-white mr-[9rem] ">
-                <div class="justify-center items-center  w-[256px]">
-                    <p class="text-2xl font-semibold">Create Your</p>
-                    <p class="text-xl font-bold text-[#FFD586]">Dream Trophy!</p>
+            <div class="text-center text-white  ">
+                <div class="justify-center items-center  2xl:w-[256px] xl:w-[256px] lg:w-[256px] md:w-[156px]">
+                    <p class="2xl:text-2xl xl:text-2xl lg:text-2xl md:text-lg s:text-md ">Create Your</p>
+                    <p class="2xl:text-xl xl:text-xl lg:text-xl md:text-md s:text-sm  text-[#FFD586]">Dream Trophy!</p>
+                    <button
+                        class="mt-6 2xl:py-2 xl:py-2 lg:py-2 md:py-2 s:py-1 2xl:px-6 xl:px-6 lg:px-6 md:px-4 s:px-4 bg-[#FFD586] text-black 2xl:text-lg xl:text-lg lg:text-lg md:text-md s:text-sm font-semibold rounded-full hover:bg-yellow-500">
+                        Create
+                    </button>
                 </div>
-                <button
-                    class="mt-6 py-2 px-6 bg-[#FFD586] text-black text-lg font-semibold rounded-full hover:bg-yellow-500">
-                    Create
-                </button>
+
             </div>
             <!-- gambar tengah -->
-            <div class=" mt-[-3rem] justify-center items-center w-[35%] ">
+            <div
+                class=" 2xl:mt-[-5rem] xl:mt-[-5rem] lg:mt-[-5rem] md:mt-[-4rem] s:mt-[2rem] justify-center items-center 2xl:w-[35%] xl:w-[35%] lg:w-[35%] md:w-[35%] s:w-[60%]">
                 <img src="{{ asset('image/Depan-bill.png') }}" alt="Trophy Image" class="w-full h-auto">
             </div>
 
             <!-- gambar kanan -->
-            <div class="flex items-center text-white ml-[9rem] ">
+            <div class="flex  items-center text-white s:mt-12 ">
                 <div class="">
                     <button>
-                        <img src="{{ asset('image/ARW.png') }}" alt="" class="w-20 h-full">
+                        <img src="{{ asset('image/ARW.png') }}" alt="" class="w-10 md:w-[4rem] lg:w-20 s:w-12 h-auto">
                     </button>
                 </div>
-                <div class="ml-6">
-                    <p class="text-lg font-semibold">Look all</p>
-                    <p class="text-lg font-semibold">Trophy</p>
+                <div class="ml-4 md:mr-4">
+                    <p class="2xl:text-lg xl:text-lg lg:text-lg md:text-sm  s:text-sm  font-semibold text-[#FFD586]">
+                        Look all</p>
+                    <p class="2xl:text-lg xl:text-lg lg:text-lg md:text-md  s:text-sm  font-semibold text-[#FFD586]">
+                        Trophy</p>
                 </div>
             </div>
         </div>
@@ -89,53 +103,66 @@
 
     </section>
 
+
+
     <section class="">
         <div class="bg-[#131313] text-white">
-            <div class="max-w-screen-xl mx-auto py-4">
-                <div class="flex justify-center items-center">
-                    <!-- Navbar Items -->
-                    <div class="flex space-x-10">
-                        <div class="group relative text-center">
-                            <p class="text-lg font-semibold cursor-pointer">Billiard Trophies</p>
-                            <div
-                                class="absolute w-full h-[2px] bg-[#FFD586] bottom-0 left-0 scale-x-0 group-hover:scale-x-100 transform transition-all duration-300">
-                            </div>
+            <div class="max-w-screen-xl mx-auto py-4 px-4">
+                <div class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+                    <!-- Item -->
+                    <div class="group relative pb-2 text-center">
+                        <p
+                            class="2xl:text-lg xl:text-lg lg:text-base md:text-base s:text-sm font-futura-medium cursor-pointer">
+                            Billiard Trophies
+                        </p>
+                        <div
+                            class="h-[2px] w-full group-hover:bg-[#FFD586] scale-x-100 transition-all duration-300 origin-left">
                         </div>
-                        <div class="group relative text-center">
-                            <p class="text-lg font-semibold cursor-pointer">Cat Trophies</p>
-                            <div
-                                class="absolute w-full h-[2px] bg-[#FFD586] bottom-0 left-0 scale-x-0 group-hover:scale-x-100 transform transition-all duration-300">
-                            </div>
+                    </div>
+
+                    <div class="group relative pb-2 text-center">
+                        <p
+                            class="2xl:text-lg xl:text-lg lg:text-base md:text-base s:text-sm font-futura-mediumcursor-pointer">
+                            Cat Trophies
+                        </p>
+                        <div class="h-[2px] w-full bg-transparent group-hover:bg-[#FFD586] transition-all duration-300">
                         </div>
-                        <div class="group relative text-center">
-                            <p class="text-lg font-semibold cursor-pointer">Poker Trophies</p>
-                            <div
-                                class="absolute w-full h-[2px] bg-[#FFD586] bottom-0 left-0 scale-x-0 group-hover:scale-x-100 transform transition-all duration-300">
-                            </div>
+                    </div>
+
+                    <div class="group relative pb-2 text-center">
+                        <p
+                            class="2xl:text-lg xl:text-lg lg:text-base md:text-base s:text-sm font-futura-medium cursor-pointer">
+                            Poker Trophies
+                        </p>
+                        <div class="h-[2px] w-full bg-transparent group-hover:bg-[#FFD586] transition-all duration-300">
                         </div>
-                        <div class="group relative text-center">
-                            <p class="text-lg font-semibold cursor-pointer">Arwana Trophies</p>
-                            <div
-                                class="absolute w-full h-[2px] bg-[#FFD586] bottom-0 left-0 scale-x-0 group-hover:scale-x-100 transform transition-all duration-300">
-                            </div>
+                    </div>
+
+                    <div class="group relative pb-2 text-center">
+                        <p
+                            class="2xl:text-lg xl:text-lg lg:text-base md:text-base s:text-sm font-futura-medium cursor-pointer">
+                            Arwana Trophies
+                        </p>
+                        <div class="h-[2px] w-full bg-transparent group-hover:bg-[#FFD586] transition-all duration-300">
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="max-w-screen-lg mx-auto py-8">
-            <div class="flex items-center justify-center bg-[#131313] rounded-full">
-                <input type="text" placeholder="search"
-                    class="w-[55%] py-6 px-4 bg-[#1a1a1a] text-white rounded-full focus:outline-none focus:ring-2 focus:ring-[#FFD586]">
-                <button
-                    class="  ml-4 py-5 px-8 bg-[#FFD586] text-black font-semibold rounded-full hover:bg-yellow-500 focus:outline-none">
-                    Search
-                </button>
+            <!-- Search Bar -->
+            <div class="max-w-screen-lg mx-auto py-8">
+                <div class="flex items-center justify-center bg-[#131313] rounded-full">
+                    <input type="text" placeholder="search"
+                        class="2xl:w-[55%] xl:w-[55%] lg:w-[55%] md:w-[45%] py-6 px-4 bg-[#1a1a1a] text-white rounded-full focus:outline-none focus:ring-2 focus:ring-[#FFD586]">
+                    <button
+                        class="ml-4 py-5 px-8 bg-[#FFD586] text-black font-semibold rounded-full hover:bg-yellow-500 focus:outline-none">
+                        Search
+                    </button>
+                </div>
             </div>
-        </div>
 
-        <!-- <form class="max-w-screen-lg mx-auto py-8">
+
+            <!-- <form class="max-w-screen-lg mx-auto py-8">
             <label for="default-search"
                 class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
             <div class="relative flex justify-center items-center rounded-full">
@@ -156,17 +183,36 @@
     <section class="bg-[#131313] text-white py-16 mt-[12rem]">
         <!-- Title with Button Style -->
         <div class="text-center">
-            <button class="px-14 py-2 bg-[#ffffff] text-[#FFD586] bg-opacity-10  rounded-full text-lg font-semibold">
+            <button class="2xl:px-14 2xl:py-2 
+                xl:px-14 xl:py-2 
+                lg:px-14 lg:py-2
+                md:px-10 md:py-2
+                s:px-6 s:py-2
+
+                2xl:text-lg
+                xl:text-lg
+                lg:text-lg
+                md:text-md
+                bg-[#ffffff] text-[#FFD586] bg-opacity-10  rounded-full font-semibold">
                 Lorem Ipsum
             </button>
         </div>
 
         <!-- Paragraph content -->
         <div class="mt-4 text-center">
-            <p class="text-5xl  font-light">
+            <p class="
+            2xl:text-5xl
+            xl:text-5xl
+            lg:text-5xl
+            md:text-3xl
+                font-light">
                 Lorem Ipsum is simply
             </p>
-            <p class="text-5xl  font-light">dummy text of the printing.</p>
+            <p class=" 
+            2xl:text-5xl
+            xl:text-5xl
+            lg:text-5xl
+            md:text-3xl font-light">dummy text of the printing.</p>
         </div>
     </section>
 
@@ -174,594 +220,449 @@
 
 
     <section class="bg-[#131313] text-white py-12">
-        <div class="max-w-screen-xl mx-auto flex justify-between">
-            <!-- Block 1 -->
-            <div class="flex flex-col items-center text-center border-r-2 border-white border-opacity-50 pr-8">
-                <div>
-                    <p class="text-4xl font-semibold text-[#FFD586]">PLA+</p>
+        <div class="max-w-screen-xl mx-auto py-8 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
-                </div>
-                <p class="text-lg font-light mt-[4rem] leading-tight">Premium </p>
-                <p class="text-lg font-light leading-tight">Polylactic Acid</p>
+            <!-- Block 1 -->
+            <div
+                class="flex flex-col items-center text-center border-b sm:border-b-0 sm:border-r-2 border-white border-opacity-50 pb-6 sm:pb-0 sm:pr-6">
+                <p class="text-3xl lg:text-4xl font-semibold text-[#FFD586]">PLA+</p>
+                <p class="text-base lg:text-lg font-futura-light mt-4 leading-tight">Premium</p>
+                <p class="text-base lg:text-lg font-light leading-tight">Polylactic Acid</p>
             </div>
 
             <!-- Block 2 -->
-            <div class="flex flex-col items-center text-center border-r-2 border-white border-opacity-50 pr-8">
-                <div>
-                    <p class="text-4xl font-semibold text-[#FFD586]">FREE</p>
-                    <p class="text-4xl font-semibold text-[#FFD586]">DELIVERY</p>
-                </div>
-                <p class="text-lg font-light mt-6 leading-tight">Kirim ke</p>
-                <p class="text-lg font-ligh leading-tightt">Seluruh Indonesia</p>
+            <div class="flex flex-col items-center text-center border-b sm:border-b-0 sm:border-r-2 border-white 
+                2xl:border-opacity-50 
+                xl:border-opacity-50 
+                lg:border-opacity-50 
+                md:border-opacity-0
+                s:border-opacity-50
+                pb-6 sm:pb-0 sm:pr-6">
+                <p class="text-3xl lg:text-4xl font-semibold text-[#FFD586]">FREE</p>
+                <p class="text-3xl lg:text-4xl font-semibold text-[#FFD586]">DELIVERY</p>
+                <p class="text-base lg:text-lg font-futura-light mt-4 leading-tight">Kirim ke</p>
+                <p class="text-base lg:text-lg font-futura-light leading-tight">Seluruh Indonesia</p>
             </div>
 
             <!-- Block 3 -->
-            <div class="flex flex-col items-center text-center border-r-2 border-white border-opacity-50 pr-8">
-                <div>
-                    <p class="text-4xl font-semibold text-[#FFD586]">WITHOUT</p>
-                    <p class="text-4xl font-semibold text-[#FFD586]">MIN. ORDER</p>
-                </div>
-                <p class="text-lg font-light mt-6 leading-tight">Pesan Berapapun </p>
-                <p class="text-lg font-light leading-tight">akan kami kerjakan</p>
+            <div
+                class="flex flex-col items-center text-center border-b sm:border-b-0 sm:border-r-2 border-white border-opacity-50 pb-6 sm:pb-0 sm:pr-6">
+                <p class="text-3xl lg:text-4xl font-semibold text-[#FFD586]">WITHOUT</p>
+                <p class="text-3xl lg:text-4xl font-semibold text-[#FFD586]">MIN. ORDER</p>
+                <p class="text-base lg:text-lg font-futura-light mt-4 leading-tight">Pesan Berapapun</p>
+                <p class="text-base lg:text-lg font-futura-light leading-tight">akan kami kerjakan</p>
             </div>
 
             <!-- Block 4 -->
             <div class="flex flex-col items-center text-center">
-                <div>
-                    <p class="text-4xl font-semibold text-[#FFD586] mt-4">FREE BOX</p>
-                </div>
-                <div>
-                    <p class="text-lg font-light mt-10 leading-tight">Semua Pembelian</p>
-                    <p class="text-lg font-light leading-tight">Piala akan mendapat</p>
-                    <p class="text-lg font-light leading-tight">box super aman</p>
-                </div>
-
+                <p class="text-3xl lg:text-4xl font-semibold text-[#FFD586]">FREE BOX</p>
+                <p class="text-base lg:text-lg font-futura-light mt-4 leading-tight">Semua Pembelian</p>
+                <p class="text-base lg:text-lg font-futura-light leading-tight">Piala akan mendapat</p>
+                <p class="text-base lg:text-lg font-futura-light leading-tight">box super aman</p>
             </div>
+
         </div>
+
     </section>
 
 
     <!-- Table Section -->
     <section class="bg-[#131313] text-white py-12">
         <!-- Size Type Selector -->
-        <div class="flex justify-center gap-4 mb-8">
-            <p class="text-[#ffffff] px-6 py-2 rounded-full text-lg">Size Type :</p>
+        <div class="flex flex-wrap justify-center gap-3 mb-8">
+            <p class="text-[#ffffff] px-4 py-2 rounded-full text-base md:text-lg">Size Type :</p>
             <button id="smallBtn"
-                class="text-[#FFD586] bg-[#ffffff] px-6 py-2 text-lg bg-opacity-10 rounded-full hover:border-2 border-[#FFD586]">SMALL</button>
+                class="text-[#FFD586] bg-[#ffffff] px-4 py-2 text-sm md:text-lg bg-opacity-10 rounded-full hover:border-2 border-[#FFD586]">SMALL</button>
             <button id="mediumBtn"
-                class="text-[#FFD586] bg-[#ffffff] px-6 py-2 text-lg bg-opacity-10 rounded-full hover:border-2 border-[#FFD586]">MEDIUM</button>
+                class="text-[#FFD586] bg-[#ffffff] px-4 py-2 text-sm md:text-lg bg-opacity-10 rounded-full hover:border-2 border-[#FFD586]">MEDIUM</button>
             <button id="largeBtn"
-                class="text-[#FFD586] bg-[#ffffff] px-6 py-2 text-lg bg-opacity-10 rounded-full hover:border-2 border-[#FFD586]">LARGE</button>
+                class="text-[#FFD586] bg-[#ffffff] px-4 py-2 text-sm md:text-lg bg-opacity-10 rounded-full hover:border-2 border-[#FFD586]">LARGE</button>
             <button id="supremeBtn"
-                class="text-[#FFD586] bg-[#ffffff] px-6 py-2 text-lg bg-opacity-10 rounded-full hover:border-2 border-[#FFD586]">SUPREME</button>
+                class="text-[#FFD586] bg-[#ffffff] px-4 py-2 text-sm md:text-lg bg-opacity-10 rounded-full hover:border-2 border-[#FFD586]">SUPREME</button>
         </div>
 
         <!-- Swiper Container -->
         <div class="swiperContainerss max-w-screen-xl mx-auto overflow-hidden" id="swiperContainerTrophy">
-            <!-- Swipper untuk Kustome TrophyVerse -->
             <div class="swiper-wrapper">
+
                 <!-- Slide 1 (Small) -->
                 <div class="swiper-slide">
-                    <div class="flex justify-between items-center">
-                        <div class="text-left ml-[8rem]">
-                            <p class="text-4xl font-semibold text-[#ffffff]">Small Trophy</p>
-                            <p class="text-lg font-light text-[#FFD586]">HEIGH < 21CM</p>
-                                    <p class="text-4xl font-bold mt-[8rem]">IDR 175.000 /pcs</p>
-                                    <div class="flex text-left mt-[2rem]">
-                                        <p class="text-sm font-light">Waktu pengerjaan :</p>
+                    <div class="flex flex-col md:flex-row items-center gap-8 p-4">
+                        <div class="w-full md:w-1/2 space-y-3">
+                            <p class="text-2xl md:text-4xl font-semibold text-white">Small Trophy</p>
+                            <p class="text-base md:text-lg font-futura-light text-[#FFD586]">HEIGHT &lt; 21CM</p>
+                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 175.000 /pcs</p>
 
-                                    </div>
-                                    <div class="flex text-left mt-2">
-                                        <p class="text-sm font-light ml-4">Qty 1 - 30 pcs
-                                            <br> 3-7 Hari Kerja
-                                        </p>
-                                        <div class="mx-4 border-l-2 h-[2.5rem]"></div> <!-- Divider -->
-                                        <p class="text-sm font-light">Qty 50+ <br> 10-14 Hari Kerja</p>
+                            <div class="mt-4 space-y-2">
+                                <p class="text-sm font-futura-light">Waktu pengerjaan :</p>
+                                <div class="flex flex-col sm:flex-row gap-4">
+                                    <p class="text-sm font-futura-light">Qty 1 - 30 pcs <br> 3-7 Hari Kerja</p>
+                                    <div class="border-l-2 h-6 s:h-0"></div>
+                                    <p class="text-sm font-futura-light">Qty 50+ <br>10-14 Hari Kerja</p>
+                                </div>
+                                <p class="text-sm">Waktu bisa berubah-ubah tergantung tingkat kerumitan, jumlah order &
+                                    antrian order.</p>
+                            </div>
 
-                                    </div>
-                                    <p class="mt-2">Waktu bisa berubah-ubah, tergantung tingkat</p>
-                                    <p> kerumitan, jumlah order & antrian order</p>
-
-                                    <button
-                                        class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4">ORDER</button>
-
-                        </div>
-                        <div class="flex ">
-                            <img src="{{ asset('image/BOX SMALL - MEDIUM.png') }}" alt="Small Trophy"
-                                class="w-[150px] h-auto mr-[2rem]">
-                            <img src="{{ asset('image/ST-desc.png') }}" alt="Small Trophy" class="w-[250px] h-auto">
+                            <button
+                                class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4">ORDER</button>
                         </div>
 
+                        <div class="flex justify-center items-center gap-4 w-full md:w-1/2">
+                            <img src="{{ asset('image/BOX SMALL - MEDIUM.png') }}" alt="Box" class="w-24 md:w-24">
+                            <img src="{{ asset('image/ST-desc.png') }}" alt="Trophy" class="w-36 md:w-40">
+                        </div>
                     </div>
                 </div>
 
                 <!-- Slide 2 (Medium) -->
                 <div class="swiper-slide">
-                    <div class="flex justify-between items-center">
-                        <div class="text-left ml-[8rem]">
-                            <p class="text-4xl font-semibold text-[#ffffff]">Medium Trophy</p>
-                            <p class="text-lg font-light text-[#FFD586]">HEIGH < 30CM</p>
-                                    <p class="text-4xl font-bold mt-[8rem]">IDR 250.000 /pcs</p>
-                                    <div class="flex text-left mt-[2rem]">
-                                        <p class="text-sm font-light">Waktu pengerjaan :</p>
+                    <div class="flex flex-col md:flex-row items-center gap-8 p-4">
+                        <div class="w-full md:w-1/2 space-y-3">
+                            <p class="text-2xl md:text-4xl font-semibold text-white">Medium Trophy</p>
+                            <p class="text-base md:text-lg font-futura-light text-[#FFD586]">HEIGHT &lt; 30CM</p>
+                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 250.000 /pcs</p>
 
-                                    </div>
-                                    <div class="flex text-left mt-2">
-                                        <p class="text-sm font-light ml-4">Qty 1 - 30 pcs
-                                            <br> 3-7 Hari Kerja
-                                        </p>
-                                        <div class="mx-4 border-l-2 h-[2.5rem]"></div> <!-- Divider -->
-                                        <p class="text-sm font-light">Qty 50+ <br> 10-14 Hari Kerja</p>
+                            <div class="mt-4 space-y-2">
+                                <p class="text-sm font-futura-light">Waktu pengerjaan :</p>
+                                <div class="flex flex-col sm:flex-row gap-4">
+                                    <p class="text-sm font-futura-light">Qty 1 - 30 pcs <br> 3-7 Hari Kerja</p>
+                                    <div class="border-l-2 h-6 s:h-0"></div>
+                                    <p class="text-sm font-futura-light">Qty 50+ <br>10-14 Hari Kerja</p>
+                                </div>
+                                <p class="text-sm">Waktu bisa berubah-ubah tergantung tingkat kerumitan, jumlah order &
+                                    antrian order.</p>
+                            </div>
 
-                                    </div>
-                                    <p class="mt-2">Waktu bisa berubah-ubah, tergantung tingkat</p>
-                                    <p> kerumitan, jumlah order & antrian order</p>
-
-                                    <button
-                                        class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4">ORDER</button>
-
-                        </div>
-                        <div class="flex ">
-                            <img src="{{ asset('image/BOX SMALL - MEDIUM.png') }}" alt="Small Trophy"
-                                class="w-[150px] h-auto mr-[2rem]">
-                            <img src="{{ asset('image/MT-desc.png') }}" alt="Small Trophy" class="w-[250px] h-auto">
+                            <button
+                                class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4">ORDER</button>
                         </div>
 
+                        <div class="flex justify-center items-center gap-4 w-full md:w-1/2">
+                            <img src="{{ asset('image/BOX SMALL - MEDIUM.png') }}" alt="Box" class="w-24 md:w-34">
+                            <img src="{{ asset('image/MT-desc.png') }}" alt="Trophy" class="w-36 md:w-50">
+                        </div>
                     </div>
                 </div>
 
                 <!-- Slide 3 (Large) -->
                 <div class="swiper-slide">
-                    <div class="flex justify-between items-center">
-                        <div class="text-left ml-[8rem]">
-                            <p class="text-4xl font-semibold text-[#ffffff]">Large Troph</p>
-                            <p class="text-lg font-light text-[#FFD586]">HEIGH < 40CM</p>
-                                    <p class="text-4xl font-bold mt-[8rem]">IDR 350.000 /pcs</p>
-                                    <div class="flex text-left mt-[2rem]">
-                                        <p class="text-sm font-light">Waktu pengerjaan :</p>
+                    <div class="flex flex-col md:flex-row items-center gap-8 p-4">
+                        <div class="w-full md:w-1/2 space-y-3">
+                            <p class="text-2xl md:text-4xl font-semibold text-white">Large Trophy</p>
+                            <p class="text-base md:text-lg font-futura-light text-[#FFD586]">HEIGHT &lt; 40CM</p>
+                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 350.000 /pcs</p>
 
-                                    </div>
-                                    <div class="flex text-left mt-2">
-                                        <p class="text-sm font-light ml-4">Qty 1 - 30 pcs
-                                            <br> 3-7 Hari Kerja
-                                        </p>
-                                        <div class="mx-4 border-l-2 h-[2.5rem]"></div> <!-- Divider -->
-                                        <p class="text-sm font-light">Qty 50+ <br> 10-14 Hari Kerja</p>
+                            <div class="mt-4 space-y-2">
+                                <p class="text-sm font-futura-light">Waktu pengerjaan :</p>
+                                <div class="flex flex-col sm:flex-row gap-4">
+                                    <p class="text-sm font-futura-light">Qty 1 - 30 pcs <br> 3-7 Hari Kerja</p>
+                                    <div class="border-l-2 h-6 s:h-0"></div>
+                                    <p class="text-sm font-futura-light">Qty 50+ <br>10-14 Hari Kerja</p>
+                                </div>
+                                <p class="text-sm">Waktu bisa berubah-ubah tergantung tingkat kerumitan, jumlah order &
+                                    antrian order.</p>
+                            </div>
 
-                                    </div>
-                                    <p class="mt-2">Waktu bisa berubah-ubah, tergantung tingkat</p>
-                                    <p> kerumitan, jumlah order & antrian order</p>
-
-                                    <button
-                                        class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4">ORDER</button>
-
-                        </div>
-                        <div class="flex gap-4">
-                            <img src="{{ asset('image/BOX LARGE.png') }}" alt="Small Trophy"
-                                class="w-[130px] h-auto mr-[2rem]">
-                            <img src="{{ asset('image/LT-desc.png') }}" alt="Small Trophy" class="w-[300px] h-auto">
+                            <button
+                                class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4">ORDER</button>
                         </div>
 
+                        <div class="flex justify-center items-center gap-4 w-full md:w-1/2">
+                            <img src="{{ asset('image/BOX LARGE.png') }}" alt="Box" class="w-24 md:w-24">
+                            <img src="{{ asset('image/LT-desc.png') }}" alt="Trophy" class="w-36 md:w-60">
+                        </div>
                     </div>
                 </div>
 
                 <!-- Slide 4 (Supreme) -->
                 <div class="swiper-slide">
-                    <div class="flex justify-between items-center ">
-                        <div class="text-left ml-[8rem]">
-                            <p class="text-4xl font-semibold text-[#ffffff]">Supreme Trophy</p>
-                            <p class="text-lg font-light text-[#FFD586]">HEIGH < 50CM</p>
-                                    <p class="text-4xl font-bold mt-[8rem]">IDR 450.000 /pcs</p>
-                                    <div class="flex text-left mt-[2rem]">
-                                        <p class="text-sm font-light">Waktu pengerjaan :</p>
+                    <div class="flex flex-col md:flex-row items-center gap-8 p-4">
+                        <div class="w-full md:w-1/2 space-y-3">
+                            <p class="text-2xl md:text-4xl font-semibold text-white">Supreme Trophy</p>
+                            <p class="text-base md:text-lg font-futura-light text-[#FFD586]">HEIGHT &lt; 50CM</p>
+                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 450.000 /pcs</p>
 
-                                    </div>
-                                    <div class="flex text-left mt-2">
-                                        <p class="text-sm font-light ml-4">Qty 1 - 30 pcs
-                                            <br> 3-7 Hari Kerja
-                                        </p>
-                                        <div class="mx-4 border-l-2 h-[2.5rem]"></div> <!-- Divider -->
-                                        <p class="text-sm font-light">Qty 50+ <br> 10-14 Hari Kerja</p>
+                            <div class="mt-4 space-y-2">
+                                <p class="text-sm font-futura-light">Waktu pengerjaan :</p>
+                                <div class="flex flex-col sm:flex-row gap-4">
+                                    <p class="text-sm font-futura-light">Qty 1 - 30 pcs <br> 3-7 Hari Kerja</p>
+                                    <div class="border-l-2 h-6 s:h-0"></div>
+                                    <p class="text-sm font-futura-ligh">Qty 50+ <br>10-14 Hari Kerja</p>
+                                </div>
+                                <p class="text-sm">Waktu bisa berubah-ubah tergantung tingkat kerumitan, jumlah order &
+                                    antrian order.</p>
+                            </div>
 
-                                    </div>
-                                    <p class="mt-2">Waktu bisa berubah-ubah, tergantung tingkat</p>
-                                    <p> kerumitan, jumlah order & antrian order</p>
-
-                                    <button
-                                        class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4">ORDER</button>
-
-                        </div>
-                        <div class="flex gap-4">
-                            <img src="{{ asset('image/BOX SUPREME.png') }}" alt="Small Trophy"
-                                class="w-[130px] h-auto mr-[5rem]">
-                            <img src="{{ asset('image/SPT-desc.png') }}" alt="Small Trophy" class="w-[200px] h-auto">
+                            <button
+                                class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4">ORDER</button>
                         </div>
 
+                        <div class="flex justify-center items-center gap-4 w-full md:w-1/2">
+                            <img src="{{ asset('image/BOX SUPREME.png') }}" alt="Box" class="w-24 md:w-24">
+                            <img src="{{ asset('image/SPT-desc.png') }}" alt="Trophy" class="w-36 md:w-50">
+                        </div>
                     </div>
                 </div>
+
             </div>
 
-            <!-- Swiper Navigation -->
-            <div class="swiper-pagination"></div>
-            <!-- <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> -->
         </div>
 
 
+
         <div class=" text-center mt-[8rem]">
-            <p class="text-5xl  font-light">
+            <p class="2xl:text-5xl 
+            xl:text-5xl 
+            lg:text-5xl 
+            md:text-3xl
+            font-futura-medium">
                 Lorem Ipsum is simply
             </p>
-            <p class="text-5xl  font-light">dummy text of the printing.</p>
+            <p class="2xl:text-5xl 
+            xl:text-5xl 
+            lg:text-5xl 
+            md:text-3xl  font-futura-medium">dummy text of the printing.</p>
         </div>
 
 
         <!-- slide swipe hasil testimoni -->
-        <section class="bg-[#131313] text-white py-12">
-    <div class="container mx-auto py-8">
-        <!-- Main Swiper Slide -->
-        <div id="swiperContainerMain" class="swiper-container my-8 overflow-hidden">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/a.jpg') }}" alt="Main Slide"
-                        class="w-[600px] h-[450px] object-cover rounded-lg">
+        <section class="bg-[#131313] text-white py-12 overflow-hidden">
+            <div class="container mx-auto py-8 px-4">
+
+                <!-- Swiper Main -->
+                <div id="swiperContainerMain" class="swiper-container my-8 overflow-hidden">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="{{ asset('image/foto/a.jpg') }}" alt="Main Slide"
+                                class="w-full max-w-[600px] h-auto md:h-[300px] lg:h-[400px] xl:h-[450px] object-cover rounded-lg mx-auto">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('image/foto/ab.jpg') }}" alt="Main Slide"
+                                class="w-full max-w-[600px] h-auto md:h-[300px] lg:h-[400px] xl:h-[450px] object-cover rounded-lg mx-auto">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('image/foto/ac.jpg') }}" alt="Main Slide"
+                                class="w-full max-w-[600px] h-auto md:h-[300px] lg:h-[400px] xl:h-[450px] object-cover rounded-lg mx-auto">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('image/foto/ad.jpg') }}" alt="Main Slide"
+                                class="w-full max-w-[600px] h-auto md:h-[300px] lg:h-[400px] xl:h-[450px] object-cover rounded-lg mx-auto">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('image/foto/af.jpg') }}" alt="Main Slide"
+                                class="w-full max-w-[600px] h-auto md:h-[300px] lg:h-[400px] xl:h-[450px] object-cover rounded-lg mx-auto">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('image/foto/ag.jpg') }}" alt="Main Slide"
+                                class="w-full max-w-[600px] h-auto md:h-[300px] lg:h-[400px] xl:h-[450px] object-cover rounded-lg mx-auto">
+                        </div>
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/ab.jpg') }}" alt="Main Slide"
-                        class="w-[600px] h-[450px] object-cover rounded-lg">
+
+                <!-- Swiper Small -->
+                <div id="swiperContainerSmall" class="swiper-container my-8 overflow-hidden">
+                    <div class="swiper-wrapper">
+                        @foreach(['b', 'c', 'd', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'n', 'o'] as $img)
+                            <div class="swiper-slide">
+                                <img src="{{ asset('image/foto/' . $img . '.jpg') }}" alt="Small Slide"
+                                    class="w-40 s:w-20 md:w-52 h-28 s:h-20 md:h-36 object-cover rounded-lg mx-auto">
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/ac.jpg') }}" alt="Main Slide"
-                        class="w-[600px] h-[450px] object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/ad.jpg') }}" alt="Main Slide"
-                        class="w-[600px] h-[450px] object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/af.jpg') }}" alt="Main Slide"
-                        class="w-[600px] h-[450px] object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/ag.jpg') }}" alt="Main Slide"
-                        class="w-[600px] h-[450px] object-cover rounded-lg">
+
+                <!-- Swiper Small Part 2 -->
+                <div id="swiperContainerSmallPart2" class="swiper-container my-8 overflow-hidden">
+                    <div class="swiper-wrapper">
+                        @foreach(['z', 'x', 'w', 'ab', 'ac', 'ad', 'af', 'ag', 'b'] as $img)
+                            <div class="swiper-slide">
+                                <img src="{{ asset('image/foto/' . $img . '.jpg') }}" alt="Small Slide"
+                                    class="w-40 s:w-20 md:w-52 h-28 s:h-20 md:h-36 object-cover rounded-lg mx-auto">
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
 
             </div>
-        </div>
+        </section>
 
-        <!-- Row of Smaller Slides (Swipable) -->
-        <div id="swiperContainerSmall" class="swiper-container my-8 overflow-hidden">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/ab.jpg') }}" alt="Small Slide 1"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/ac.jpg') }}" alt="Small Slide 2"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/ad.jpg') }}" alt="Small Slide 3"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/af.jpg') }}" alt="Small Slide 4"
-                        class="w-60 h-40object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/ag.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/b.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/c.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/d.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/e.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/f.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/g.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/h.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/i.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/j.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/k.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/l.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/o.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/p.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-            </div>
-        </div>
 
-        <div id="swiperContainerSmallPart2" class="swiper-container my-8 overflow-hidden">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/z.jpg') }}" alt="Small Slide 1"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/x.jpg') }}" alt="Small Slide 2"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/w.jpg') }}" alt="Small Slide 3"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/v.jpg') }}" alt="Small Slide 4"
-                        class="w-60 h-40object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/u.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/t.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/s.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/r.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/q.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/p.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/o.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/n.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/l.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/j.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/i.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/h.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/g.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-                <div class="swiper-slide">
-                    <img src="{{ asset('image/foto/f.jpg') }}" alt="Small Slide 5"
-                        class="w-60 h-40 object-cover rounded-lg">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
         <!-- PETA INDONESIA -->
         <div class="flex items-center justify-center mt-12 relative">
             <!-- Peta Indonesia -->
             <img src="{{ asset('image/IND.png') }}" alt="MAP INDONESIA" class="w-[95%] h-auto">
 
-            <!-- Gambar Pengguna -->
-            <div class="absolute" style="top: 20%; left: 45%;">
-                <img src="{{ asset('image/fotoFormal/download (2).jpg') }}" alt="User 1" class="w-16 h-16 rounded-full">
+            <!-- Avatar 1 -->
+            <div class="absolute" style="top: 23%; left: 47%;">
+                <img src="{{ asset('image/fotoFormal/download (2).jpg') }}"
+                    class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full border-4 border-white border-opacity-0 shadow-lg object-cover transition-transform duration-300 hover:scale-105"
+                    alt="User 1">
             </div>
 
-            <div class="absolute" style="top: 40%; right: 11%;">
-                <img src="{{ asset('image/fotoFormal/download (4).jpg') }}" alt="User 2" class="w-[2.7rem] h-[2.7rem] rounded-full">
+            <!-- Avatar 2 -->
+            <div class="absolute" style="top: 41%; right: 11%;">
+                <img src="{{ asset('image/fotoFormal/download (4).jpg') }}"
+                    class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full border-4 border-white border-opacity-0 shadow-lg object-cover transition-transform duration-300 hover:scale-105"
+                    alt="User 2">
             </div>
 
-            <div class="absolute" style="top: 55%; left: 20%;">
-                <img src="{{ asset('image/fotoFormal/download (3).jpg') }}" alt="User 3" class="w-[3rem] h-[3rem] rounded-full">
+            <!-- Avatar 3 -->
+            <div class="absolute" style="top: 56%; left: 19%;">
+                <img src="{{ asset('image/fotoFormal/download (3).jpg') }}"
+                    class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full border-4 border-white border-opacity-0 shadow-lg object-cover transition-transform duration-300 hover:scale-105"
+                    alt="User 3">
             </div>
 
-            <div class="absolute" style="top: 75%; left: 30%;">
-                <img src="{{ asset('image/fotoFormal/download (5).jpg') }}" alt="User 1" class="w-16 h-16 rounded-full">
+            <!-- Avatar 4 -->
+            <div class="absolute" style="top: 76%; left: 32%;">
+                <img src="{{ asset('image/fotoFormal/download (5).jpg') }}"
+                    class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full border-4 border-white border-opacity-0 shadow-lg object-cover transition-transform duration-300 hover:scale-105"
+                    alt="User 4">
             </div>
 
-            <!-- Tambahkan lebih banyak gambar pengguna sesuai kebutuhan -->
+            <!-- Avatar 5 -->
+            <div class="absolute" style="top: 77%; left: 65%;">
+                <img src="{{ asset('image/fotoFormal/download (5).jpg') }}"
+                    class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full border-4 border-white border-opacity-0 shadow-lg object-cover transition-transform duration-300 hover:scale-105"
+                    alt="User 5">
+            </div>
         </div>
+
 
         <!-- TESTI MONY -->
 
         <div class="mt-12 flex flex-col gap-8 items-center justify-center overflow-hidden">
-            <button class="rounded-full text-[#FFD586] text-xl bg-white bg-opacity-10 px-14 py-3">Testimonial</button>
+            <button
+                class="rounded-full text-[#FFD586] 2xl:text-xl xl:text-xl lg:text-xl md:text-lg s:text-sm bg-white bg-opacity-10 2xl:px-14 xl:px-14 lg:px-14 md:px-10 s:px-6  2xl:py-3 xl:py-3 lg:py-3 md:py-3 s:py-2">Testimonial</button>
             <div class="flex items-center justify-center">
-                <p class="text-5xl text-center font-light ">Hear What Our
+                <p class="2xl:text-5xl xl:text-5xl lg:text-5xl md:text-4xl s:text-3xl text-center font-futura-medium ">Hear What
+                    Our
                     <br> Client Have to say
                 </p>
             </div>
-            <div class="swiper-containerTesting max-w-4xl mx-auto my-10" id="">
-                <div class="swiper-wrapper space-x-6"> <!-- Add space-x-6 to add gap between slides -->
+            <!-- Swiper -->
+            <div class="swiper swiper-containerTesting w-full max-w-7xl mx-auto my-10 overflow-hidden">
+                <div class="swiper-wrapper">
 
                     <!-- Slide 1 -->
-                    <div class="swiper-slide" style="width: 20vw; height: 40vh;">
-                        <div class="flex flex-col justify-between items-center ">
-                            <div
-                                class="flex flex-col  bg-white bg-opacity-20   p-6 rounded-lg shadow-lg text-white mb-[5rem] ml-[3rem]">
-                                <p class="text-yellow-500 text-8xl">“</p>
-                                <div class="ml-[2rem] mr-[6rem]">
-                                    <p class="text-gray-300 ">
-                                        Lorem Ipsum is simply dummy text <br>of the printing and typesetting industry.
-                                        <br>Lorem
-                                        Ipsum has
-                                        been the industry's
-
-                                    </p>
-                                    <p class="mt-8"> standard dummy text ever <br> since the 1500s.</p>
-                                    <div class="flex items-center mt-4">
-                                        <img src="{{ url('image/fotoFormal/download (2).jpg') }}" alt="Person 1"
-                                            class="w-12 h-12 rounded-full object-cover mr-3">
-                                        <div class="flex flex-col">
-                                            <span class="font-semibold">Mr. Reza Anonim</span>
-                                            <span class="text-yellow-500">★★★★☆</span>
-                                        </div>
-
-                                    </div>
+                    <div class="swiper-slide px-4 md:px-4">
+                        <div class="bg-[#3a3a3a] rounded-lg p-6 md:p-6 shadow-lg flex flex-col justify-between h-full">
+                            <p class="text-yellow-500 text-4xl sm:text-5xl mb-4">“</p>
+                            <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </p>
+                            <div class="flex items-center mt-4 space-x-4">
+                                <img src="{{ url('image/fotoFormal/download (2).jpg') }}" alt="Person 1"
+                                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-semibold text-sm sm:text-base">Mr. Reza Anonim</p>
+                                    <p class="text-yellow-500 text-xs sm:text-sm">★★★★★</p>
                                 </div>
-
-
                             </div>
                         </div>
-
                     </div>
 
                     <!-- Slide 2 -->
-                    <div class="swiper-slide" style="width: 20vw; height: 40vh;">
-                        <div class="flex flex-col justify-between items-center ">
-
-                            <div
-                                class="flex flex-col  bg-white bg-opacity-20  p-6 rounded-lg shadow-lg text-white mb-[5rem] ml-[3rem]">
-                                <p class="text-yellow-500 text-8xl">“</p>
-                                <div class="ml-[2rem] mr-[6rem]">
-                                    <p class="text-gray-300 ">
-                                        Lorem Ipsum is simply dummy text <br>of the printing and typesetting industry.
-                                        <br>Lorem
-                                        Ipsum has
-                                        been the industry's
-
-                                    </p>
-                                    <p class="mt-8"> standard dummy text ever <br> since the 1500s.</p>
-                                    <div class="flex items-center mt-4">
-                                        <img src="{{ url('image/fotoFormal/download.jpg') }}" alt="Person 1"
-                                            class="w-12 h-12 rounded-full object-cover mr-3">
-                                        <div class="flex flex-col">
-                                            <span class="font-semibold">Mrs. Diana Anonim</span>
-                                            <span class="text-yellow-500">★★★★☆</span>
-                                        </div>
-
-                                    </div>
+                    <div class="swiper-slide px-4 md:px-4">
+                        <div class="bg-[#3a3a3a] rounded-lg p-6 md:p-6 shadow-lg flex flex-col justify-between h-full">
+                            <p class="text-yellow-500 text-4xl sm:text-5xl mb-4">“</p>
+                            <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </p>
+                            <div class="flex items-center mt-4 space-x-4">
+                                <img src="{{ url('image/fotoFormal/download.jpg') }}" alt="Person 2"
+                                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-semibold text-sm sm:text-base">Mrs. Diana Anonim</p>
+                                    <p class="text-yellow-500 text-xs sm:text-sm">★★★★☆</p>
                                 </div>
-
-
                             </div>
                         </div>
-
                     </div>
+
                     <!-- Slide 3 -->
-                    <div class="swiper-slide" style="width: 20vw; height: 40vh;">
-                        <div class="flex flex-col justify-between items-center ">
-
-                            <div
-                                class="flex flex-col  bg-white bg-opacity-20  p-6 rounded-lg shadow-lg text-white mb-[5rem] ml-[3rem]">
-                                <p class="text-yellow-500 text-8xl">“</p>
-                                <div class="ml-[2rem] mr-[6rem]">
-                                    <p class="text-gray-300 ">
-                                        Lorem Ipsum is simply dummy text <br>of the printing and typesetting industry.
-                                        <br>Lorem
-                                        Ipsum has
-                                        been the industry's
-
-                                    </p>
-                                    <p class="mt-8"> standard dummy text ever <br> since the 1500s.</p>
-                                    <div class="flex items-center mt-4">
-                                        <img src="{{ url('image/fotoFormal/download (1).jpg') }}" alt="Person 1"
-                                            class="w-12 h-12 rounded-full object-cover mr-3">
-                                        <div class="flex flex-col">
-                                            <span class="font-semibold">Mr. Toto Anonim</span>
-                                            <span class="text-yellow-500">★★★★☆</span>
-                                        </div>
-
-                                    </div>
+                    <div class="swiper-slide px-4 md:px-4">
+                        <div class="bg-[#3a3a3a] rounded-lg p-6 md:p-6 shadow-lg flex flex-col justify-between h-full">
+                            <p class="text-yellow-500 text-4xl sm:text-5xl mb-4">“</p>
+                            <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </p>
+                            <div class="flex items-center mt-4 space-x-4">
+                                <img src="{{ url('image/fotoFormal/download (3).jpg') }}" alt="Person 3"
+                                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-semibold text-sm sm:text-base">Mr. Toto Anonim</p>
+                                    <p class="text-yellow-500 text-xs sm:text-sm">★★★★☆</p>
                                 </div>
-
-
                             </div>
                         </div>
-
                     </div>
-                </div>
 
-                <!-- Add Pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
+                    <div class="swiper-slide px-4 md:px-4">
+                        <div class="bg-[#3a3a3a] rounded-lg p-6 md:p-6 shadow-lg flex flex-col justify-between h-full">
+                            <p class="text-yellow-500 text-4xl sm:text-5xl mb-4">“</p>
+                            <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </p>
+                            <div class="flex items-center mt-4 space-x-4">
+                                <img src="{{ url('image/fotoFormal/download (1).jpg') }}" alt="Person 3"
+                                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
+                                <div>
+                                    <p class="font-semibold text-sm sm:text-base">Mr. Toto Anonim</p>
+                                    <p class="text-yellow-500 text-xs sm:text-sm">★★★★☆</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- Optional Pagination -->
+                <!-- <div class="swiper-pagination mt-4"></div> -->
             </div>
         </div>
     </section>
 
-    <footer class="bg-[#131313]">
-        <div class="bg-[#131313] text-white py-4 text-center mb-12 flex justify-between items-center px-12">
-            <!-- Logo di kiri -->
-            <img src="{{ asset('image/LOGO TRV.png') }}" alt="Trophyverse Logo" class="w-[20%] h-auto">
+    <footer class="bg-[#131313] overflow-hidden">
+        <div
+            class="bg-[#131313] text-white py-4 text-center mb-12 flex flex-col md:flex-row justify-between items-center px-4 md:px-12 space-y-4 md:space-y-0">
+
+            <!-- Logo -->
+            <img src="{{ asset('image/LOGO TRV.png') }}" alt="Trophyverse Logo" class="w-32 md:w-[20%] s:w-[40%] h-auto">
 
             <!-- Teks di tengah -->
-            <div class="flex gap-[10rem] space-x-16 mr-[6rem]">
-                <span class="text-xl">License</span>
-                <span class="text-xl">FAQ</span>
-                <span class="text-xl">Marketplace</span>
+            <div class="flex gap-6 md:gap-12 lg:gap-16 xl:gap-24">
+                <span class="text-sm md:text-base lg:text-xl">License</span>
+                <span class="text-sm md:text-base lg:text-xl">FAQ</span>
+                <span class="text-sm md:text-base lg:text-xl">Marketplace</span>
             </div>
 
-            <!-- Ikon di kanan -->
-            <div class="flex space-x-16 mr-16">
-                <a href="https://link-untuk-logo.com" target="_blank" class="border border-white p-2 rounded-full">
-                    <span class="[&>svg]:h-5 [&>svg]:w-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
-                            <path
-                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
-                        </svg>
-                    </span>
+            <!-- Ikon -->
+            <div class="flex space-x-6">
+                <!-- Instagram -->
+                <a href="#" target="_blank"
+                    class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 2xl:h-14  xl:h-14 lg:h-14 md:h-12 s:h-9 flex items-center justify-center rounded-full border-2 border-white hover:bg-white hover:text-black transition-all">
+                    <i class="fa-brands fa-instagram text-2xl"></i>
                 </a>
 
-                <a href="https://link-untuk-phone.com" target="_blank" class="border border-white p-2 rounded-full">
-                    <svg class="w-4 h-4 text-white white:text-white" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 19 18">
-                        <path
-                            d="M18 13.446a3.02 3.02 0 0 0-.946-1.985l-1.4-1.4a3.054 3.054 0 0 0-4.218 0l-.7.7a.983.983 0 0 1-1.39 0l-2.1-2.1a.983.983 0 0 1 0-1.389l.7-.7a2.98 2.98 0 0 0 0-4.217l-1.4-1.4a2.824 2.824 0 0 0-4.218 0c-3.619 3.619-3 8.229 1.752 12.979C6.785 16.639 9.45 18 11.912 18a7.175 7.175 0 0 0 5.139-2.325A2.9 2.9 0 0 0 18 13.446Z" />
-                    </svg>
+                <!-- Phone -->
+                <a href="#" target="_blank"
+                    class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 2xl:h-14  xl:h-14 lg:h-14 md:h-12 s:h-9 flex items-center justify-center rounded-full border-2 border-white hover:bg-white hover:text-black transition-all">
+                    <i class="fa-solid fa-phone text-2xl"></i>
                 </a>
             </div>
+
 
         </div>
     </footer>
+
 
 </body>
 
@@ -845,12 +746,18 @@
     //swipe testimoni
     var reviewSwiper = new Swiper('.swiper-containerTesting', {
         loop: false,
-        spaceBetween: -400,  // Atur jarak antar slide lebih besar
+        spaceBetween: 25,
+        slidesPerView: 1.1,
+        breakpoints: {
+            640: { slidesPerView: 1.5 },
+            768: { slidesPerView: 1 },
+            1024: { slidesPerView: 2.5 },
+            1280: { slidesPerView: 3 }
+        },
         pagination: {
-            el: '.swiper-pagination',
+
             clickable: true,
         },
-        loopAdditionalSlides: 1,
     });
 
     // new Slide('.slide-wrapper', {
@@ -865,18 +772,26 @@
     // });
 
     var mainSwiper = new Swiper('#swiperContainerMain', {
-        slidesPerView: 3,
+        slidesPerView: 3, // default
         spaceBetween: 20,
         loop: true,
-        overflow: 'hidden',
         autoplay: {
-            delay: 3000,  // Delay between slides in milliseconds
-            // Keeps autoplay running even when user interacts
+            delay: 3000,
+            disableOnInteraction: false
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1
+            },
+            768: {
+                slidesPerView: 2
+            },
+            1024: {
+                slidesPerView: 3
+            }
         }
-
-
-
     });
+
 
     // Initialize Smaller Slides
     var smallSwiper = new Swiper('#swiperContainerSmall', {
@@ -885,10 +800,20 @@
         loop: true,
         overflow: 'hidden',
         autoplay: {
-            delay: 3000,  // Delay between slides in milliseconds
-            // Keeps autoplay running even when user interacts
+            delay: 3000,
+            disableOnInteraction: false
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 4
+            },
+            768: {
+                slidesPerView: 3
+            },
+            1024: {
+                slidesPerView: 6
+            }
         }
-
     });
 
     var smallSwiper = new Swiper('#swiperContainerSmallPart2', {
@@ -897,8 +822,19 @@
         loop: true,
         overflow: 'hidden',
         autoplay: {
-            delay: 3000,  // Delay between slides in milliseconds
-            // Keeps autoplay running even when user interacts
+            delay: 3000,
+            disableOnInteraction: false
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 4
+            },
+            768: {
+                slidesPerView: 3
+            },
+            1024: {
+                slidesPerView: 6
+            }
         }
 
     });
