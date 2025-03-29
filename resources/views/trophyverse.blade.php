@@ -150,16 +150,31 @@
             </div>
 
             <!-- Search Bar -->
-            <div class="max-w-screen-lg mx-auto py-8">
-                <div class="flex items-center justify-center bg-[#131313] rounded-full">
-                    <input type="text" placeholder="search"
-                        class="2xl:w-[55%] xl:w-[55%] lg:w-[55%] md:w-[45%] py-6 px-4 bg-[#1a1a1a] text-white rounded-full focus:outline-none focus:ring-2 focus:ring-[#FFD586]">
-                    <button
-                        class="ml-4 py-5 px-8 bg-[#FFD586] text-black font-semibold rounded-full hover:bg-yellow-500 focus:outline-none">
+            <div class="max-w-screen-xl mx-auto py-8 px-4">
+                <div class="flex items-center justify-center bg-[#131313] rounded-full p-1">
+                    <input type="text" placeholder="search" class="w-full max-w-[800px] 
+                   2xl:py-5 2xl:px-6 
+                   xl:py-5 xl:px-6 
+                   lg:py-5 lg:px-6 
+                   md:py-4 md:px-5 
+                   s:py-2 s:px-3
+                   bg-[#1a1a1a] text-white rounded-full focus:outline-none focus:ring-2 focus:ring-[#FFD586]
+                   text-sm md:text-base xl:text-lg placeholder:capitalize" />
+
+                    <button class="ml-2 
+                   2xl:py-5 2xl:px-8 
+                   xl:py-5 xl:px-8 
+                   lg:py-5 lg:px-8 
+                   md:py-4 md:px-6 
+                   s:py-2 s:px-4
+                   bg-[#FFD586] text-black font-semibold rounded-full hover:bg-yellow-500 transition-all
+                   text-sm md:text-base xl:text-lg">
                         Search
                     </button>
                 </div>
             </div>
+
+
 
 
             <!-- <form class="max-w-screen-lg mx-auto py-8">
@@ -537,7 +552,8 @@
             <button
                 class="rounded-full text-[#FFD586] 2xl:text-xl xl:text-xl lg:text-xl md:text-lg s:text-sm bg-white bg-opacity-10 2xl:px-14 xl:px-14 lg:px-14 md:px-10 s:px-6  2xl:py-3 xl:py-3 lg:py-3 md:py-3 s:py-2">Testimonial</button>
             <div class="flex items-center justify-center">
-                <p class="2xl:text-5xl xl:text-5xl lg:text-5xl md:text-4xl s:text-3xl text-center font-futura-medium ">Hear What
+                <p class="2xl:text-5xl xl:text-5xl lg:text-5xl md:text-4xl s:text-3xl text-center font-futura-medium ">
+                    Hear What
                     Our
                     <br> Client Have to say
                 </p>
@@ -635,7 +651,8 @@
             class="bg-[#131313] text-white py-4 text-center mb-12 flex flex-col md:flex-row justify-between items-center px-4 md:px-12 space-y-4 md:space-y-0">
 
             <!-- Logo -->
-            <img src="{{ asset('image/LOGO TRV.png') }}" alt="Trophyverse Logo" class="w-32 md:w-[20%] s:w-[40%] h-auto">
+            <img src="{{ asset('image/LOGO TRV.png') }}" alt="Trophyverse Logo"
+                class="w-32 md:w-[20%] s:w-[40%] h-auto">
 
             <!-- Teks di tengah -->
             <div class="flex gap-6 md:gap-12 lg:gap-16 xl:gap-24">
