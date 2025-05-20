@@ -77,11 +77,31 @@
                 </div>
 
             </div>
-            <!-- gambar tengah -->
-            <div
-                class=" 2xl:mt-[-5rem] xl:mt-[-5rem] lg:mt-[-5rem] md:mt-[-4rem] s:mt-[2rem] justify-center items-center 2xl:w-[35%] xl:w-[35%] lg:w-[35%] md:w-[35%] s:w-[60%]">
-                <img src="{{ asset('image/Depan-bill.png') }}" alt="Trophy Image" class="w-full h-auto">
+            <!-- Gambar Tengah (Swiper) -->
+            <div class="2xl:mt-[-5rem] xl:mt-[-5rem] lg:mt-[-5rem] md:mt-[-4rem] s:mt-[2rem] 
+            justify-center items-center 
+            2xl:w-[35%] xl:w-[35%] lg:w-[35%] md:w-[35%] s:w-[60%]">
+                <div class="swiper trophySwiper w-full">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="{{ asset('image/Depan-bill.png') }}" alt="Trophy 1" class="w-full h-auto">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('image/trophyverseUtama/Depan-cat.png') }}" alt="Trophy 2"
+                                class="w-full h-auto">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('image/trophyverseUtama/Depan-poker.png') }}" alt="Trophy 3"
+                                class="w-full h-auto">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="{{ asset('image/trophyverseUtama/Depan-arwana.png') }}" alt="Trophy 4"
+                                class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
             </div>
+
 
             <!-- gambar kanan -->
             <div class="flex  items-center text-white s:mt-12 ">
@@ -111,8 +131,8 @@
                 <div class="flex flex-wrap justify-center gap-x-8 gap-y-4">
                     <!-- Item -->
                     <div class="group relative pb-2 text-center">
-                        <p
-                            class="2xl:text-lg xl:text-lg lg:text-base md:text-base s:text-sm font-futura-medium cursor-pointer">
+                        <p class="2xl:text-lg xl:text-lg lg:text-base md:text-base s:text-sm font-futura-medium cursor-pointer"
+                            data-slide="0">
                             Billiard Trophies
                         </p>
                         <div
@@ -121,8 +141,8 @@
                     </div>
 
                     <div class="group relative pb-2 text-center">
-                        <p
-                            class="2xl:text-lg xl:text-lg lg:text-base md:text-base s:text-sm font-futura-mediumcursor-pointer">
+                        <p class="2xl:text-lg xl:text-lg lg:text-base md:text-base s:text-sm font-futura-mediumcursor-pointer"
+                            data-slide="1">
                             Cat Trophies
                         </p>
                         <div class="h-[2px] w-full bg-transparent group-hover:bg-[#FFD586] transition-all duration-300">
@@ -130,8 +150,8 @@
                     </div>
 
                     <div class="group relative pb-2 text-center">
-                        <p
-                            class="2xl:text-lg xl:text-lg lg:text-base md:text-base s:text-sm font-futura-medium cursor-pointer">
+                        <p class="2xl:text-lg xl:text-lg lg:text-base md:text-base s:text-sm font-futura-medium cursor-pointer"
+                            data-slide="2">
                             Poker Trophies
                         </p>
                         <div class="h-[2px] w-full bg-transparent group-hover:bg-[#FFD586] transition-all duration-300">
@@ -139,8 +159,8 @@
                     </div>
 
                     <div class="group relative pb-2 text-center">
-                        <p
-                            class="2xl:text-lg xl:text-lg lg:text-base md:text-base s:text-sm font-futura-medium cursor-pointer">
+                        <p class="2xl:text-lg xl:text-lg lg:text-base md:text-base s:text-sm font-futura-medium cursor-pointer"
+                            data-slide="3">
                             Arwana Trophies
                         </p>
                         <div class="h-[2px] w-full bg-transparent group-hover:bg-[#FFD586] transition-all duration-300">
@@ -855,6 +875,50 @@
         }
 
     });
+    document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('#smallBtn, #mediumBtn, #largeBtn, #supremeBtn');
+
+        function setActive(buttonIndex) {
+            swiper.slideTo(buttonIndex); // Perbaikan di sini
+            buttons.forEach((btn, index) => {
+                if (index === buttonIndex) {
+                    btn.classList.add('border-2', 'border-[#FFD586]');
+                } else {
+                    btn.classList.remove('border-2', 'border-[#FFD586]');
+                }
+            });
+        }
+
+        // Button Event Listeners to navigate to specific slides
+        document.getElementById('smallBtn').addEventListener('click', () => setActive(0));
+        document.getElementById('mediumBtn').addEventListener('click', () => setActive(1));
+        document.getElementById('largeBtn').addEventListener('click', () => setActive(2));
+        document.getElementById('supremeBtn').addEventListener('click', () => setActive(3));
+
+
+        const trophySwiper = new Swiper('.trophySwiper', {
+            loop: true,
+            centeredSlides: true,
+            slidesPerView: 1,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+        const navItems = document.querySelectorAll('[data-slide]');
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const index = parseInt(item.getAttribute('data-slide'));
+                trophySwiper.slideToLoop(index);
+
+                // Optional: highlight clicked nav
+                navItems.forEach(i => i.classList.remove('text-[#FFD586]'));
+                item.classList.add('text-[#FFD586]');
+            });
+        });
+    });
+
 
 
 
