@@ -22,18 +22,18 @@
 <body class="" style="background-color: #131313;">
 
     <!-- Header -->
-    <header style="background-color: #131313;" class="text-white py-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="h-auto 2xl:w-[30%] xl:w-[25%] lg:w-[25%] md:w-[27%] s:w-[50%]">
+    <header style="background-color: #131313;" class="text-white mt-4">
+        <div class="container mx-auto flex justify-between items-center 2xl:px-16 xl:px-16 lg:px-16 md:px-8 s:px-0">
+            <div class="h-auto 2xl:w-[18%] xl:w-[20%] lg:w-[20%] md:w-[27%] s:w-[50%]">
                 <!-- Parent container width set to 10% -->
-                <img src="{{ asset('image/LOGO TRV.png') }}" alt="Logo" class="w-[100%] h-auto">
+                <img src="{{ asset('image/LOGO TRV.png') }}" alt="Logo" class=" h-auto">
                 <!-- Set a fixed width and automatic height -->
             </div>
 
 
             <button
                 class="grid grid-cols-2 items-center justify-center 
-                    2xl:w-12 xl:w-12 lg:w-16 s:w-8 md:w-12  2xl:h-12 xl:h-12 lg:h-16 s:h-8 md:h-12   rounded-full gap-[-6rem]">
+                    2xl:w-10 xl:w-10 lg:w-10 s:w-8 md:w-12  2xl:h-10 xl:h-10 lg:h-10 s:h-8 md:h-12  rounded-full gap-[-6rem]">
                 <div>
                     <span class="block w-2.5 h-2.5 bg-white rounded-full"></span>
                 </div>
@@ -53,11 +53,12 @@
 
 
     <!-- Hero Section -->
-    <section style="background-color: #131313;" class=" text-white py-16 text-center">
-        <div class="font-impact 2xl:text-[12rem] 2xl:leading-[1] 
-                    xl:text-[12rem] xl:leading-[1]
-                    lg:text-[10rem] lg:leading-[1]
+    <section style="background-color: #131313;" class=" text-white py-4 text-center">
+        <div class="font-impact 2xl:text-[9rem] 2xl:leading-[1] 
+                    xl:text-[8rem] xl:leading-[1]
+                    lg:text-[6rem] lg:leading-[1]
                     md:text-[6rem] md:leading-[1] 
+
                     s:text-[4rem] s:leading-[1] 
                     flex justify-center items-center gap-4">
             <p class="text-white opacity-10">BORN TO</p>
@@ -68,10 +69,10 @@
             <!-- Tulisan dan tombol kiri -->
             <div class="text-center text-white  ">
                 <div class="justify-center items-center  2xl:w-[256px] xl:w-[256px] lg:w-[256px] md:w-[156px]">
-                    <p class="2xl:text-2xl xl:text-2xl lg:text-2xl md:text-lg s:text-md ">Create Your</p>
+                    <p class="2xl:text-xl xl:text-xl lg:text-xl md:text-md s:text-sm">Create Your</p>
                     <p class="2xl:text-xl xl:text-xl lg:text-xl md:text-md s:text-sm  text-[#FFD586]">Dream Trophy!</p>
                     <button
-                        class="mt-6 2xl:py-2 xl:py-2 lg:py-2 md:py-2 s:py-1 2xl:px-6 xl:px-6 lg:px-6 md:px-4 s:px-4 bg-[#FFD586] text-black 2xl:text-lg xl:text-lg lg:text-lg md:text-md s:text-sm font-semibold rounded-full hover:bg-yellow-500">
+                        class="mt-6 2xl:py-2 xl:py-2 lg:py-2 md:py-2 s:py-1 2xl:px-6 xl:px-6 lg:px-6 md:px-4 s:px-4 bg-[#FFD586] text-black 2xl:text-base xl:text-base lg:text-base md:text-sm s:text-sm font-semibold rounded-full hover:bg-yellow-500">
                         Create
                     </button>
                 </div>
@@ -80,23 +81,23 @@
             <!-- Gambar Tengah (Swiper) -->
             <div class="2xl:mt-[-5rem] xl:mt-[-5rem] lg:mt-[-5rem] md:mt-[-4rem] s:mt-[2rem] 
             justify-center items-center 
-            2xl:w-[35%] xl:w-[35%] lg:w-[35%] md:w-[35%] s:w-[60%]">
+            2xl:w-[28%] xl:w-[28%] lg:w-[28%] md:w-[35%] s:w-[60%]">
                 <div class="swiper trophySwiper w-full">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="{{ asset('image/Depan-bill.png') }}" alt="Trophy 1" class="w-full h-auto">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ asset('image/trophyverseUtama/Depan-cat.png') }}" alt="Trophy 2"
-                                class="w-full h-auto">
+                            <img src="{{ asset('image/trophyverseUtama/Depan-cat-New.png') }}" alt="Trophy 2"
+                                class="w-[80%] h-auto">
                         </div>
                         <div class="swiper-slide">
                             <img src="{{ asset('image/trophyverseUtama/Depan-poker.png') }}" alt="Trophy 3"
-                                class="w-full h-auto">
+                                class="w-[90%] h-auto">
                         </div>
                         <div class="swiper-slide">
                             <img src="{{ asset('image/trophyverseUtama/Depan-arwana.png') }}" alt="Trophy 4"
-                                class="w-full h-auto">
+                                class="w-[80%] h-auto">
                         </div>
                     </div>
                 </div>
@@ -107,13 +108,16 @@
             <div class="flex  items-center text-white s:mt-12 ">
                 <div class="">
                     <button>
-                        <img src="{{ asset('image/ARW.png') }}" alt="" class="w-10 md:w-[4rem] lg:w-20 s:w-12 h-auto">
+                        <img src="{{ asset('image/ARW.png') }}" alt=""
+                            class="w-10 md:w-[4rem] lg:w-[4.5rem] s:w-12 h-auto">
                     </button>
                 </div>
                 <div class="ml-4 md:mr-4">
-                    <p class="2xl:text-lg xl:text-lg lg:text-lg md:text-sm  s:text-sm  font-semibold text-[#FFD586]">
+                    <p
+                        class="2xl:text-base xl:text-base lg:text-base md:text-sm  s:text-sm  font-semibold text-[#FFD586]">
                         Look all</p>
-                    <p class="2xl:text-lg xl:text-lg lg:text-lg md:text-md  s:text-sm  font-semibold text-[#FFD586]">
+                    <p
+                        class="2xl:text-base xl:text-base lg:text-base md:text-md  s:text-sm  font-semibold text-[#FFD586]">
                         Trophy</p>
                 </div>
             </div>
@@ -127,7 +131,7 @@
 
     <section class="">
         <div class="bg-[#131313] text-white">
-            <div class="max-w-screen-xl mx-auto py-4 px-4">
+            <div class="max-w-screen-xl mx-auto py-[-10rem] px-4">
                 <div class="flex flex-wrap justify-center gap-x-8 gap-y-4">
                     <!-- Item -->
                     <div class="group relative pb-2 text-center">
@@ -170,48 +174,30 @@
             </div>
 
             <!-- Search Bar -->
-            <div class="max-w-screen-xl mx-auto py-8 px-4">
-                <div class="flex items-center justify-center bg-[#131313] rounded-full p-1">
-                    <input type="text" placeholder="search" class="w-full max-w-[800px] 
-                   2xl:py-5 2xl:px-6 
-                   xl:py-5 xl:px-6 
-                   lg:py-5 lg:px-6 
-                   md:py-4 md:px-5 
-                   s:py-2 s:px-3
-                   bg-[#1a1a1a] text-white rounded-full focus:outline-none focus:ring-2 focus:ring-[#FFD586]
-                   text-sm md:text-base xl:text-lg placeholder:capitalize" />
-
-                    <button class="ml-2 
-                   2xl:py-5 2xl:px-8 
-                   xl:py-5 xl:px-8 
-                   lg:py-5 lg:px-8 
-                   md:py-4 md:px-6 
-                   s:py-2 s:px-4
-                   bg-[#FFD586] text-black font-semibold rounded-full hover:bg-yellow-500 transition-all
-                   text-sm md:text-base xl:text-lg">
+            <div class="max-w-screen-md mx-auto py-8 px-4">
+                <div class="flex items-center justify-between bg-[#1A1A1A] rounded-full p-1 shadow-inner">
+                    <input type="text" placeholder="Search..." class="w-full 
+                2xl:py-5 2xl:px-6 
+                xl:py-5 xl:px-6 
+                lg:py-5 lg:px-6 
+                md:py-4 md:px-5 
+                s:py-2 s:px-3
+                bg-transparent text-white placeholder-gray-400 
+                rounded-l-full focus:outline-none 
+                text-sm md:text-base xl:text-lg" />
+                    <button class="2xl:py-5 2xl:px-8 
+                xl:py-5 xl:px-8 
+                lg:py-5 lg:px-8 
+                md:py-4 md:px-6 
+                s:py-2 s:px-4
+                bg-[#FFD580] text-black font-semibold 
+                rounded-full hover:bg-[#ffce6e] transition-all
+                text-sm md:text-base xl:text-lg">
                         Search
                     </button>
                 </div>
             </div>
 
-
-
-
-            <!-- <form class="max-w-screen-lg mx-auto py-8">
-            <label for="default-search"
-                class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-            <div class="relative flex justify-center items-center rounded-full">
-               
-                <input type="search" id="default-search"
-                    class="block w-full py-5 px-6 pl-6 pr-20 text-lg text-gray-900 border focus:ring-2 bg-[#1a1a1a] rounded-full"
-                    placeholder="Search..." required />
-             
-                <button type="submit"
-                    class="absolute right-0 top-0 bottom-0 px-8 py-4 bg-[#FFD586] hover:bg-yellow-500 focus:ring-4 focus:outline-none font-medium rounded-full text-lg text-black">
-                    Search
-                </button>
-            </div>
-        </form> -->
 
     </section>
 
@@ -900,10 +886,6 @@
             loop: true,
             centeredSlides: true,
             slidesPerView: 1,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
         });
 
         const navItems = document.querySelectorAll('[data-slide]');
