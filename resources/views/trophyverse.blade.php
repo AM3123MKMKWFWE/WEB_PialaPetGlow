@@ -59,7 +59,7 @@
                     lg:text-[6rem] lg:leading-[1]
                     md:text-[6rem] md:leading-[1] 
 
-                    s:text-[4rem] s:leading-[1] 
+                    s:text-[3rem] s:leading-[1] 
                     flex justify-center items-center gap-4">
             <p class="text-white opacity-10">BORN TO</p>
             <p class="text-[#FFD586]">WIN</p>
@@ -79,52 +79,41 @@
 
             </div>
             <!-- Gambar Tengah (Swiper) -->
-           <div
-    class="
-        flex justify-center items-center
-        2xl:mt-[-5rem] xl:mt-[-5rem] lg:mt-[-5rem] md:mt-[-4rem] s:mt-8
-        2xl:w-[28%] xl:w-[28%] lg:w-[28%] md:w-[35%] s:w-full
-    "
->
-    <div class="swiper trophySwiper w-full max-w-[260px] sm:max-w-[300px] md:max-w-[320px]">
+           <!-- Gambar Tengah (Swiper) -->
+<div
+    class="flex justify-center items-center
+           2xl:mt-[-5rem] xl:mt-[-5rem] lg:mt-[-5rem] md:mt-[-4rem] s:mt-8
+           s:w-full ss:w-[100%] md:w-[40%] lg:w-[32%] xl:w-[30%] 2xl:w-[28%]">
+    
+    <div
+        class="swiper trophySwiper w-full mx-auto
+               max-w-[260px]
+               s:max-w-full
+               ss:max-w-full
+               md:max-w-[420px]
+               lg:max-w-[460px]
+               xl:max-w-[500px]">
+
         <div class="swiper-wrapper">
-
             <div class="swiper-slide flex justify-center items-end">
-                <img
-                    src="{{ asset('image/Depan-bill.png') }}"
-                    alt="Trophy 1"
-                    class="w-auto max-h-[320px] sm:max-h-[360px] object-contain"
-                >
+                <img src="{{ asset('image/Depan-bill.png') }}" alt="Trophy 1"
+                     class="w-full h-auto max-h-[420px] object-contain">
             </div>
-
             <div class="swiper-slide flex justify-center items-end">
-                <img
-                    src="{{ asset('image/trophyverseUtama/Depan-cat-New.png') }}"
-                    alt="Trophy 2"
-                    class="w-auto max-h-[320px] sm:max-h-[360px] object-contain"
-                >
+                <img src="{{ asset('image/trophyverseUtama/Depan-cat-New.png') }}" alt="Trophy 2"
+                     class="w-full h-auto max-h-[420px] object-contain">
             </div>
-
             <div class="swiper-slide flex justify-center items-end">
-                <img
-                    src="{{ asset('image/trophyverseUtama/Depan-poker.png') }}"
-                    alt="Trophy 3"
-                    class="w-auto max-h-[320px] sm:max-h-[360px] object-contain"
-                >
+                <img src="{{ asset('image/trophyverseUtama/Depan-poker.png') }}" alt="Trophy 3"
+                     class="w-full h-auto max-h-[420px] object-contain">
             </div>
-
             <div class="swiper-slide flex justify-center items-end">
-                <img
-                    src="{{ asset('image/trophyverseUtama/Depan-arwana.png') }}"
-                    alt="Trophy 4"
-                    class="w-auto max-h-[320px] sm:max-h-[360px] object-contain"
-                >
+                <img src="{{ asset('image/trophyverseUtama/Depan-arwana.png') }}" alt="Trophy 4"
+                     class="w-full h-auto max-h-[420px] object-contain">
             </div>
-
         </div>
     </div>
 </div>
-
 
             <!-- gambar kanan -->
             <div class="flex  items-center text-white s:mt-12 ">
@@ -299,7 +288,7 @@
 
                             <div class="mt-4 space-y-2">
                                 <p class="text-sm font-futura-light">Waktu pengerjaan :</p>
-                                <div class="flex flex-col sm:flex-row gap-4">   
+                                <div class="flex flex-col sm:flex-row gap-4">
                                     <p class="text-sm font-futura-light">Qty 1 - 30 pcs <br> 3-7 Hari Kerja</p>
                                     <div class="border-l-2 h-6 s:h-0"></div>
                                     <p class="text-sm font-futura-light">Qty 50+ <br>10-14 Hari Kerja</p>
@@ -308,8 +297,12 @@
                                     antrian order.</p>
                             </div>
 
-                            <button
-                                class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4">ORDER</button>
+                           <button
+                                type="button"
+                                onclick="copyAndOpenIg()"
+                                class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4 inline-flex items-center justify-center">
+                                ORDER
+                            </button>
                         </div>
 
                         <div class="flex justify-center items-center gap-4 w-full md:w-1/2">
@@ -338,8 +331,13 @@
                                     antrian order.</p>
                             </div>
 
-                            <button
-                                class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4">ORDER</button>
+                             <button
+                                type="button"
+                                onclick="copyAndOpenIg()"
+                                class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4 inline-flex items-center justify-center">
+                                ORDER
+                            </button>
+                            <!-- <a href="" class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4 inline-flex items-center justify-center">TEST</a> -->
                         </div>
 
                         <div class="flex justify-center items-center gap-4 w-full md:w-1/2">
@@ -369,7 +367,11 @@
                             </div>
 
                             <button
-                                class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4">ORDER</button>
+                                type="button"
+                                onclick="copyAndOpenIg()"
+                                class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4 inline-flex items-center justify-center">
+                                ORDER
+                            </button>
                         </div>
 
                         <div class="flex justify-center items-center gap-4 w-full md:w-1/2">
@@ -399,7 +401,11 @@
                             </div>
 
                             <button
-                                class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4">ORDER</button>
+                                type="button"
+                                onclick="copyAndOpenIg()"
+                                class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4 inline-flex items-center justify-center">
+                                ORDER
+                            </button>
                         </div>
 
                         <div class="flex justify-center items-center gap-4 w-full md:w-1/2">
@@ -415,7 +421,7 @@
 
 
 
-        <div class=" text-center mt-[8rem]">
+        <!-- <div class=" text-center mt-[8rem]">
             <p class="2xl:text-5xl 
             xl:text-5xl 
             lg:text-5xl 
@@ -427,7 +433,7 @@
             xl:text-5xl 
             lg:text-5xl 
             md:text-3xl  font-futura-medium">dummy text of the printing.</p>
-        </div>
+        </div> -->
 
 
         <!-- slide swipe hasil testimoni -->
@@ -496,71 +502,51 @@
         <!-- PETA INDONESIA -->
         <div class="flex items-center justify-center mt-12 relative">
             <!-- Peta Indonesia -->
-            <img src="{{ asset('image/IND.png') }}" alt="MAP INDONESIA" class="w-[95%] h-auto">
+            <img src="{{ asset('image/IND.png') }}" alt="MAP INDONESIA" class="w-[100%] h-auto">
 
             <!-- Avatar 1 -->
             <div class="absolute" style="top: 23%; left: 47%;">
-                  <img 
-                        src="data:image/svg+xml;utf8,
-                        <svg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 24 24'>
-                            <path d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z'/>
-                        </svg>"
-                        class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full 
-                            border-4 border-white border-opacity-0 shadow-lg 
-                            object-cover transition-transform duration-300 hover:scale-105"
-                    />
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFD586' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z'/%3E%3C/svg%3E"
+                    class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14
+                            rounded-full shadow-lg transition-transform 
+                            duration-300 hover:scale-105" />
+
             </div>
 
             <!-- Avatar 2 -->
-            <div class="absolute" style="top: 41%; right: 11%;">
-                  <img 
-                        src="data:image/svg+xml;utf8,
-                        <svg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 24 24'>
-                            <path d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z'/>
-                        </svg>"
-                        class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full 
-                            border-4 border-white border-opacity-0 shadow-lg 
-                            object-cover transition-transform duration-300 hover:scale-105"
-                    />
+            <div class="absolute" style="top: 41%; right: 15%;">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFD586' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z'/%3E%3C/svg%3E"
+                    class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14
+                            rounded-full shadow-lg transition-transform 
+                            duration-300 hover:scale-105" />
+
             </div>
 
             <!-- Avatar 3 -->
             <div class="absolute" style="top: 56%; left: 19%;">
-                  <img 
-                        src="data:image/svg+xml;utf8,
-                        <svg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 24 24'>
-                            <path d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z'/>
-                        </svg>"
-                        class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full 
-                            border-4 border-white border-opacity-0 shadow-lg 
-                            object-cover transition-transform duration-300 hover:scale-105"
-                    />
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFD586' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z'/%3E%3C/svg%3E"
+                    class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14
+                        rounded-full shadow-lg transition-transform 
+                        duration-300 hover:scale-105" />
+
             </div>
 
             <!-- Avatar 4 -->
-            <div class="absolute" style="top: 76%; left: 32%;">
-               <img 
-                        src="data:image/svg+xml;utf8,
-                        <svg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 24 24'>
-                            <path d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z'/>
-                        </svg>"
-                        class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full 
-                            border-4 border-white border-opacity-0 shadow-lg 
-                            object-cover transition-transform duration-300 hover:scale-105"
-                    />
+            <div class="absolute" style="top: 70%; left: 32%;">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFD586' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z'/%3E%3C/svg%3E"
+                    class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14
+           rounded-full shadow-lg transition-transform 
+           duration-300 hover:scale-105" />
+
             </div>
 
             <!-- Avatar 5 -->
-            <div class="absolute" style="top: 77%; left: 65%;">
-                <img 
-                        src="data:image/svg+xml;utf8,
-                        <svg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 24 24'>
-                            <path d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z'/>
-                        </svg>"
-                        class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full 
-                            border-4 border-white border-opacity-0 shadow-lg 
-                            object-cover transition-transform duration-300 hover:scale-105"
-                    />
+            <div class="absolute" style="top: 77%; left: 55%;">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFD586' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z'/%3E%3C/svg%3E"
+                    class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14
+           rounded-full shadow-lg transition-transform 
+           duration-300 hover:scale-105" />
+
             </div>
         </div>
 
@@ -586,16 +572,16 @@
                         <div class="bg-[#3a3a3a] rounded-lg p-6 md:p-6 shadow-lg flex flex-col justify-between h-full">
                             <p class="text-yellow-500 text-4xl sm:text-5xl mb-4">“</p>
                             <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
-                                Desainnya bener-bener melebihi ekspektasi. Detailnya halus, finishing-nya premium banget. Trofinya keliatan mahal dan elegan. Worth every penny.
+                                Desainnya bener-bener melebihi ekspektasi. Detailnya halus, finishing-nya premium
+                                banget. Trofinya keliatan mahal dan elegan. Worth every penny.
                             </p>
                             <div class="flex items-center mt-4 space-x-4">
-                                <img  src="data:image/svg+xml;utf8,
+                                <img src="data:image/svg+xml;utf8,
                                     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='gray'>
                                         <path d='M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z'/>
-                                    </svg>" alt="Person 1"
-                                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
+                                    </svg>" alt="Person 1" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
                                 <div>
-                                    <p class="font-semibold text-sm sm:text-base">Mr. User Anonim</p>
+                                    <p class="font-semibold text-sm sm:text-base">Anonim</p>
                                     <p class="text-yellow-500 text-xs sm:text-sm">★★★★★</p>
                                 </div>
                             </div>
@@ -607,16 +593,16 @@
                         <div class="bg-[#3a3a3a] rounded-lg p-6 md:p-6 shadow-lg flex flex-col justify-between h-full">
                             <p class="text-yellow-500 text-4xl sm:text-5xl mb-4">“</p>
                             <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
-                               Awalnya cuma coba-coba, tapi hasilnya bikin speechless. Tim desainnya sangat membantu dan fast response. Trofi datang aman, rapi, dan super megah
+                                Awalnya cuma coba-coba, tapi hasilnya bikin speechless. Tim desainnya sangat membantu
+                                dan fast response. Trofi datang aman, rapi, dan super megah
                             </p>
                             <div class="flex items-center mt-4 space-x-4">
-                                <img  src="data:image/svg+xml;utf8,
+                                <img src="data:image/svg+xml;utf8,
                                     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='gray'>
                                         <path d='M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z'/>
-                                    </svg>"  alt="Person 2"
-                                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
+                                    </svg>" alt="Person 2" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
                                 <div>
-                                    <p class="font-semibold text-sm sm:text-base">Mrs. User Anonim</p>
+                                    <p class="font-semibold text-sm sm:text-base">Anonim</p>
                                     <p class="text-yellow-500 text-xs sm:text-sm">★★★★☆</p>
                                 </div>
                             </div>
@@ -628,16 +614,16 @@
                         <div class="bg-[#3a3a3a] rounded-lg p-6 md:p-6 shadow-lg flex flex-col justify-between h-full">
                             <p class="text-yellow-500 text-4xl sm:text-5xl mb-4">“</p>
                             <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
-                                Pesan untuk event kantor, semua orang langsung kagum liat kualitasnya. Berat, solid, dan berkelas. Ini level piala yang biasanya cuma ada di kompetisi besar.
+                                Pesan untuk event kantor, semua orang langsung kagum liat kualitasnya. Berat, solid, dan
+                                berkelas. Ini level piala yang biasanya cuma ada di kompetisi besar.
                             </p>
                             <div class="flex items-center mt-4 space-x-4">
-                                <img  src="data:image/svg+xml;utf8,
+                                <img src="data:image/svg+xml;utf8,
                                     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='gray'>
                                         <path d='M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z'/>
-                                    </svg>"  alt="Person 3"
-                                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
+                                    </svg>" alt="Person 3" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
                                 <div>
-                                    <p class="font-semibold text-sm sm:text-base">Mr. User Anonim</p>
+                                    <p class="font-semibold text-sm sm:text-base">Anonim</p>
                                     <p class="text-yellow-500 text-xs sm:text-sm">★★★★☆</p>
                                 </div>
                             </div>
@@ -648,16 +634,16 @@
                         <div class="bg-[#3a3a3a] rounded-lg p-6 md:p-6 shadow-lg flex flex-col justify-between h-full">
                             <p class="text-yellow-500 text-4xl sm:text-5xl mb-4">“</p>
                             <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
-                                Packaging aman, pengiriman cepat, dan hasil trofinya sangat detail. Kelihatan jelas kalau ini produk high-end
+                                Packaging aman, pengiriman cepat, dan hasil trofinya sangat detail. Kelihatan jelas
+                                kalau ini produk high-end
                             </p>
                             <div class="flex items-center mt-4 space-x-4">
-                                <img  src="data:image/svg+xml;utf8,
+                                <img src="data:image/svg+xml;utf8,
                                     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='gray'>
                                         <path d='M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z'/>
-                                    </svg>"  alt="Person 3"
-                                    class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
+                                    </svg>" alt="Person 3" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
                                 <div>
-                                    <p class="font-semibold text-sm sm:text-base">Mr. User Anonim</p>
+                                    <p class="font-semibold text-sm sm:text-base">Anonim</p>
                                     <p class="text-yellow-500 text-xs sm:text-sm">★★★★☆</p>
                                 </div>
                             </div>
@@ -691,9 +677,8 @@
             <!-- Ikon -->
             <div class="flex space-x-6">
                 <!-- Instagram -->
-               <a href="https://ig.me/m/trophyverse.id?text=hai%20ingin%20tau%20lebih%20terkait%20trophyverse,%20yuk%20order%20sekarang"
-                    target="_blank"
-                    class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 
+                <a href="https://ig.me/m/trophyverse.id?text=hai%20ingin%20tau%20lebih%20terkait%20trophyverse,%20yuk%20order%20sekarang"
+                    target="_blank" class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 
                         2xl:h-14 xl:h-14 lg:h-14 md:h-12 s:h-9 
                         flex items-center justify-center 
                         rounded-full border-2 border-white 
@@ -703,14 +688,13 @@
                 </a>
 
                 <!-- Phone -->
-                <a href="#" target="_blank"
+                <!-- <a href="#" target="_blank"
                     class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 2xl:h-14  xl:h-14 lg:h-14 md:h-12 s:h-9 flex items-center justify-center rounded-full border-2 border-white hover:bg-white hover:text-black transition-all">
                     <i class="fa-solid fa-phone text-2xl"></i>
-                </a>
+                </a> -->
 
                 <!-- Tiktok -->
-                 <a href="#" target="_blank"
-                    class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 
+                <a href="#" target="_blank" class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 
                         2xl:h-14 xl:h-14 lg:h-14 md:h-12 s:h-9 
                         flex items-center justify-center 
                         rounded-full border-2 border-white 
@@ -719,22 +703,28 @@
                     <i class="fa-brands fa-tiktok text-2xl"></i>
                 </a>
 
-                <a href="https://s.shopee.co.id/6fZrUQSwUb" target="_blank"
-                class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 
-                    2xl:h-14 xl:h-14 lg:h-14 md:h-12 s:h-9 
-                    flex items-center justify-center 
-                    rounded-full border-2 border-white 
-                    hover:bg-white hover:text-black 
-                    transition-all">
+                <a href="https://s.shopee.co.id/6fZrUQSwUb" target="_blank" class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 
+          2xl:h-14 xl:h-14 lg:h-14 md:h-12 s:h-9 
+          flex items-center justify-center 
+          rounded-full border-2 border-white 
+          hover:bg-white hover:text-black 
+          transition-all">
 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                    class="w-6 h-6 fill-current">
-                    <path d="M12 2c-2.6 0-4.7 2.1-4.7 4.7h2c0-1.5 1.2-2.7 2.7-2.7s2.7 1.2 2.7 2.7h2C16.7 4.1 14.6 2 12 2zm7 5h-2.2c-.2 0-.4.2-.4.4v.4H7.6v-.4c0-.2-.2-.4-.4-.4H5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h14c.6 0 1-.4 1-1V8c0-.6-.4-1-1-1zm-8 9.8c-1.6 0-3-1.3-3-3h1.8c0 .7.6 1.2 1.2 1.2s1.2-.6 1.2-1.2c0-1.2-1.8-1.3-3-2.4-.6-.5-1-1.3-1-2.1 0-1.6 1.3-3 3-3s3 1.3 3 3h-1.8c0-.7-.6-1.2-1.2-1.2s-1.2.6-1.2 1.2c0 1.2 1.8 1.3 3 2.4.6.5 1 1.3 1 2.1 0 1.6-1.3 3-3 3z"/>
-                </svg>
+                    <svg viewBox="0 0 24 24" class="w-6 h-6">
+                        <!-- tas -->
+                        <rect x="5" y="7" width="16" height="14" rx="2" ry="2" fill="white" />
+                        <!-- handle -->
+                        <path d="M9 8c0-1.4 1.3-2.5 3-2.5s3 1.1 3 2.5h1.2C16.2 5.9 14.4 4.5 12 4.5S7.8 5.9 7.8 8H9z"
+                            fill="white" />
+                        <!-- huruf S -->
+                        <text x="13" y="16.2" text-anchor="middle" font-size="6"
+                            font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+                            fill="black">
+                            S
+                        </text>
+                    </svg>
 
-            </a>
-
-
+                </a>
             </div>
 
 
@@ -954,12 +944,36 @@
                 item.classList.add('text-[#FFD586]');
             });
         });
+
+        
     });
 
+    function copyAndOpenIg() {
+        const text = "hai ingin tau lebih terkait trophyverse, yuk order sekarang";
 
+        if (navigator.clipboard && window.isSecureContext) {
+            navigator.clipboard.writeText(text).catch(() => {
+                console.log('Gagal copy ke clipboard, tapi tetap buka IG.');
+            }).finally(() => {
+                window.open(
+                    "https://ig.me/m/trophyverse.id",
+                    "_blank",
+                    "noopener,noreferrer"
+                );
+                alert("Teks sudah dicopy, tinggal paste di chat Instagram ya 🌟");
+            });
+        } else {
+            // fallback: langsung buka IG tanpa copy
+            window.open(
+                "https://ig.me/m/trophyverse.id",
+                "_blank",
+                "noopener,noreferrer"
+            );
+            alert("Silakan ketik pesan: 'hai ingin tau lebih terkait trophyverse, yuk order sekarang'");
+        }
+    }
 
-
-
+     
 
 
 
