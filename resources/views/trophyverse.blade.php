@@ -79,29 +79,51 @@
 
             </div>
             <!-- Gambar Tengah (Swiper) -->
-            <div class="2xl:mt-[-5rem] xl:mt-[-5rem] lg:mt-[-5rem] md:mt-[-4rem] s:mt-[2rem] 
-            justify-center items-center 
-            2xl:w-[28%] xl:w-[28%] lg:w-[28%] md:w-[35%] s:w-[60%]">
-                <div class="swiper trophySwiper w-full">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/Depan-bill.png') }}" alt="Trophy 1" class="w-full h-auto">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/trophyverseUtama/Depan-cat-New.png') }}" alt="Trophy 2"
-                                class="w-[80%] h-auto">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/trophyverseUtama/Depan-poker.png') }}" alt="Trophy 3"
-                                class="w-[90%] h-auto">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="{{ asset('image/trophyverseUtama/Depan-arwana.png') }}" alt="Trophy 4"
-                                class="w-[80%] h-auto">
-                        </div>
-                    </div>
-                </div>
+           <div
+    class="
+        flex justify-center items-center
+        2xl:mt-[-5rem] xl:mt-[-5rem] lg:mt-[-5rem] md:mt-[-4rem] s:mt-8
+        2xl:w-[28%] xl:w-[28%] lg:w-[28%] md:w-[35%] s:w-full
+    "
+>
+    <div class="swiper trophySwiper w-full max-w-[260px] sm:max-w-[300px] md:max-w-[320px]">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide flex justify-center items-end">
+                <img
+                    src="{{ asset('image/Depan-bill.png') }}"
+                    alt="Trophy 1"
+                    class="w-auto max-h-[320px] sm:max-h-[360px] object-contain"
+                >
             </div>
+
+            <div class="swiper-slide flex justify-center items-end">
+                <img
+                    src="{{ asset('image/trophyverseUtama/Depan-cat-New.png') }}"
+                    alt="Trophy 2"
+                    class="w-auto max-h-[320px] sm:max-h-[360px] object-contain"
+                >
+            </div>
+
+            <div class="swiper-slide flex justify-center items-end">
+                <img
+                    src="{{ asset('image/trophyverseUtama/Depan-poker.png') }}"
+                    alt="Trophy 3"
+                    class="w-auto max-h-[320px] sm:max-h-[360px] object-contain"
+                >
+            </div>
+
+            <div class="swiper-slide flex justify-center items-end">
+                <img
+                    src="{{ asset('image/trophyverseUtama/Depan-arwana.png') }}"
+                    alt="Trophy 4"
+                    class="w-auto max-h-[320px] sm:max-h-[360px] object-contain"
+                >
+            </div>
+
+        </div>
+    </div>
+</div>
 
 
             <!-- gambar kanan -->
@@ -201,45 +223,6 @@
 
     </section>
 
-    <section class="bg-[#131313] text-white py-16 mt-[12rem]">
-        <!-- Title with Button Style -->
-        <div class="text-center">
-            <button class="2xl:px-14 2xl:py-2 
-                xl:px-14 xl:py-2 
-                lg:px-14 lg:py-2
-                md:px-10 md:py-2
-                s:px-6 s:py-2
-
-                2xl:text-lg
-                xl:text-lg
-                lg:text-lg
-                md:text-md
-                bg-[#ffffff] text-[#FFD586] bg-opacity-10  rounded-full font-semibold">
-                Lorem Ipsum
-            </button>
-        </div>
-
-        <!-- Paragraph content -->
-        <div class="mt-4 text-center">
-            <p class="
-            2xl:text-5xl
-            xl:text-5xl
-            lg:text-5xl
-            md:text-3xl
-                font-light">
-                Lorem Ipsum is simply
-            </p>
-            <p class=" 
-            2xl:text-5xl
-            xl:text-5xl
-            lg:text-5xl
-            md:text-3xl font-light">dummy text of the printing.</p>
-        </div>
-    </section>
-
-
-
-
     <section class="bg-[#131313] text-white py-12">
         <div class="max-w-screen-xl mx-auto py-8 px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
@@ -316,7 +299,7 @@
 
                             <div class="mt-4 space-y-2">
                                 <p class="text-sm font-futura-light">Waktu pengerjaan :</p>
-                                <div class="flex flex-col sm:flex-row gap-4">
+                                <div class="flex flex-col sm:flex-row gap-4">   
                                     <p class="text-sm font-futura-light">Qty 1 - 30 pcs <br> 3-7 Hari Kerja</p>
                                     <div class="border-l-2 h-6 s:h-0"></div>
                                     <p class="text-sm font-futura-light">Qty 50+ <br>10-14 Hari Kerja</p>
@@ -517,37 +500,67 @@
 
             <!-- Avatar 1 -->
             <div class="absolute" style="top: 23%; left: 47%;">
-                <img src="{{ asset('image/fotoFormal/download (2).jpg') }}"
-                    class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full border-4 border-white border-opacity-0 shadow-lg object-cover transition-transform duration-300 hover:scale-105"
-                    alt="User 1">
+                  <img 
+                        src="data:image/svg+xml;utf8,
+                        <svg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 24 24'>
+                            <path d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z'/>
+                        </svg>"
+                        class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full 
+                            border-4 border-white border-opacity-0 shadow-lg 
+                            object-cover transition-transform duration-300 hover:scale-105"
+                    />
             </div>
 
             <!-- Avatar 2 -->
             <div class="absolute" style="top: 41%; right: 11%;">
-                <img src="{{ asset('image/fotoFormal/download (4).jpg') }}"
-                    class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full border-4 border-white border-opacity-0 shadow-lg object-cover transition-transform duration-300 hover:scale-105"
-                    alt="User 2">
+                  <img 
+                        src="data:image/svg+xml;utf8,
+                        <svg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 24 24'>
+                            <path d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z'/>
+                        </svg>"
+                        class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full 
+                            border-4 border-white border-opacity-0 shadow-lg 
+                            object-cover transition-transform duration-300 hover:scale-105"
+                    />
             </div>
 
             <!-- Avatar 3 -->
             <div class="absolute" style="top: 56%; left: 19%;">
-                <img src="{{ asset('image/fotoFormal/download (3).jpg') }}"
-                    class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full border-4 border-white border-opacity-0 shadow-lg object-cover transition-transform duration-300 hover:scale-105"
-                    alt="User 3">
+                  <img 
+                        src="data:image/svg+xml;utf8,
+                        <svg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 24 24'>
+                            <path d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z'/>
+                        </svg>"
+                        class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full 
+                            border-4 border-white border-opacity-0 shadow-lg 
+                            object-cover transition-transform duration-300 hover:scale-105"
+                    />
             </div>
 
             <!-- Avatar 4 -->
             <div class="absolute" style="top: 76%; left: 32%;">
-                <img src="{{ asset('image/fotoFormal/download (5).jpg') }}"
-                    class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full border-4 border-white border-opacity-0 shadow-lg object-cover transition-transform duration-300 hover:scale-105"
-                    alt="User 4">
+               <img 
+                        src="data:image/svg+xml;utf8,
+                        <svg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 24 24'>
+                            <path d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z'/>
+                        </svg>"
+                        class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full 
+                            border-4 border-white border-opacity-0 shadow-lg 
+                            object-cover transition-transform duration-300 hover:scale-105"
+                    />
             </div>
 
             <!-- Avatar 5 -->
             <div class="absolute" style="top: 77%; left: 65%;">
-                <img src="{{ asset('image/fotoFormal/download (5).jpg') }}"
-                    class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full border-4 border-white border-opacity-0 shadow-lg object-cover transition-transform duration-300 hover:scale-105"
-                    alt="User 5">
+                <img 
+                        src="data:image/svg+xml;utf8,
+                        <svg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 24 24'>
+                            <path d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z'/>
+                        </svg>"
+                        class="s:w-8 s:h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 rounded-full 
+                            border-4 border-white border-opacity-0 shadow-lg 
+                            object-cover transition-transform duration-300 hover:scale-105"
+                    />
             </div>
         </div>
 
@@ -573,14 +586,16 @@
                         <div class="bg-[#3a3a3a] rounded-lg p-6 md:p-6 shadow-lg flex flex-col justify-between h-full">
                             <p class="text-yellow-500 text-4xl sm:text-5xl mb-4">“</p>
                             <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                Desainnya bener-bener melebihi ekspektasi. Detailnya halus, finishing-nya premium banget. Trofinya keliatan mahal dan elegan. Worth every penny.
                             </p>
                             <div class="flex items-center mt-4 space-x-4">
-                                <img src="{{ url('image/fotoFormal/download (2).jpg') }}" alt="Person 1"
+                                <img  src="data:image/svg+xml;utf8,
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='gray'>
+                                        <path d='M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z'/>
+                                    </svg>" alt="Person 1"
                                     class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
                                 <div>
-                                    <p class="font-semibold text-sm sm:text-base">Mr. Reza Anonim</p>
+                                    <p class="font-semibold text-sm sm:text-base">Mr. User Anonim</p>
                                     <p class="text-yellow-500 text-xs sm:text-sm">★★★★★</p>
                                 </div>
                             </div>
@@ -592,14 +607,16 @@
                         <div class="bg-[#3a3a3a] rounded-lg p-6 md:p-6 shadow-lg flex flex-col justify-between h-full">
                             <p class="text-yellow-500 text-4xl sm:text-5xl mb-4">“</p>
                             <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                               Awalnya cuma coba-coba, tapi hasilnya bikin speechless. Tim desainnya sangat membantu dan fast response. Trofi datang aman, rapi, dan super megah
                             </p>
                             <div class="flex items-center mt-4 space-x-4">
-                                <img src="{{ url('image/fotoFormal/download.jpg') }}" alt="Person 2"
+                                <img  src="data:image/svg+xml;utf8,
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='gray'>
+                                        <path d='M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z'/>
+                                    </svg>"  alt="Person 2"
                                     class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
                                 <div>
-                                    <p class="font-semibold text-sm sm:text-base">Mrs. Diana Anonim</p>
+                                    <p class="font-semibold text-sm sm:text-base">Mrs. User Anonim</p>
                                     <p class="text-yellow-500 text-xs sm:text-sm">★★★★☆</p>
                                 </div>
                             </div>
@@ -611,14 +628,16 @@
                         <div class="bg-[#3a3a3a] rounded-lg p-6 md:p-6 shadow-lg flex flex-col justify-between h-full">
                             <p class="text-yellow-500 text-4xl sm:text-5xl mb-4">“</p>
                             <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                Pesan untuk event kantor, semua orang langsung kagum liat kualitasnya. Berat, solid, dan berkelas. Ini level piala yang biasanya cuma ada di kompetisi besar.
                             </p>
                             <div class="flex items-center mt-4 space-x-4">
-                                <img src="{{ url('image/fotoFormal/download (3).jpg') }}" alt="Person 3"
+                                <img  src="data:image/svg+xml;utf8,
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='gray'>
+                                        <path d='M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z'/>
+                                    </svg>"  alt="Person 3"
                                     class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
                                 <div>
-                                    <p class="font-semibold text-sm sm:text-base">Mr. Toto Anonim</p>
+                                    <p class="font-semibold text-sm sm:text-base">Mr. User Anonim</p>
                                     <p class="text-yellow-500 text-xs sm:text-sm">★★★★☆</p>
                                 </div>
                             </div>
@@ -629,14 +648,16 @@
                         <div class="bg-[#3a3a3a] rounded-lg p-6 md:p-6 shadow-lg flex flex-col justify-between h-full">
                             <p class="text-yellow-500 text-4xl sm:text-5xl mb-4">“</p>
                             <p class="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                Packaging aman, pengiriman cepat, dan hasil trofinya sangat detail. Kelihatan jelas kalau ini produk high-end
                             </p>
                             <div class="flex items-center mt-4 space-x-4">
-                                <img src="{{ url('image/fotoFormal/download (1).jpg') }}" alt="Person 3"
+                                <img  src="data:image/svg+xml;utf8,
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='gray'>
+                                        <path d='M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z'/>
+                                    </svg>"  alt="Person 3"
                                     class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover">
                                 <div>
-                                    <p class="font-semibold text-sm sm:text-base">Mr. Toto Anonim</p>
+                                    <p class="font-semibold text-sm sm:text-base">Mr. User Anonim</p>
                                     <p class="text-yellow-500 text-xs sm:text-sm">★★★★☆</p>
                                 </div>
                             </div>
@@ -670,8 +691,14 @@
             <!-- Ikon -->
             <div class="flex space-x-6">
                 <!-- Instagram -->
-                <a href="#" target="_blank"
-                    class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 2xl:h-14  xl:h-14 lg:h-14 md:h-12 s:h-9 flex items-center justify-center rounded-full border-2 border-white hover:bg-white hover:text-black transition-all">
+               <a href="https://ig.me/m/trophyverse.id?text=hai%20ingin%20tau%20lebih%20terkait%20trophyverse,%20yuk%20order%20sekarang"
+                    target="_blank"
+                    class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 
+                        2xl:h-14 xl:h-14 lg:h-14 md:h-12 s:h-9 
+                        flex items-center justify-center 
+                        rounded-full border-2 border-white 
+                        hover:bg-white hover:text-black 
+                        transition-all">
                     <i class="fa-brands fa-instagram text-2xl"></i>
                 </a>
 
@@ -680,6 +707,34 @@
                     class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 2xl:h-14  xl:h-14 lg:h-14 md:h-12 s:h-9 flex items-center justify-center rounded-full border-2 border-white hover:bg-white hover:text-black transition-all">
                     <i class="fa-solid fa-phone text-2xl"></i>
                 </a>
+
+                <!-- Tiktok -->
+                 <a href="#" target="_blank"
+                    class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 
+                        2xl:h-14 xl:h-14 lg:h-14 md:h-12 s:h-9 
+                        flex items-center justify-center 
+                        rounded-full border-2 border-white 
+                        hover:bg-white hover:text-black 
+                        transition-all">
+                    <i class="fa-brands fa-tiktok text-2xl"></i>
+                </a>
+
+                <a href="https://s.shopee.co.id/6fZrUQSwUb" target="_blank"
+                class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 
+                    2xl:h-14 xl:h-14 lg:h-14 md:h-12 s:h-9 
+                    flex items-center justify-center 
+                    rounded-full border-2 border-white 
+                    hover:bg-white hover:text-black 
+                    transition-all">
+
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    class="w-6 h-6 fill-current">
+                    <path d="M12 2c-2.6 0-4.7 2.1-4.7 4.7h2c0-1.5 1.2-2.7 2.7-2.7s2.7 1.2 2.7 2.7h2C16.7 4.1 14.6 2 12 2zm7 5h-2.2c-.2 0-.4.2-.4.4v.4H7.6v-.4c0-.2-.2-.4-.4-.4H5c-.6 0-1 .4-1 1v12c0 .6.4 1 1 1h14c.6 0 1-.4 1-1V8c0-.6-.4-1-1-1zm-8 9.8c-1.6 0-3-1.3-3-3h1.8c0 .7.6 1.2 1.2 1.2s1.2-.6 1.2-1.2c0-1.2-1.8-1.3-3-2.4-.6-.5-1-1.3-1-2.1 0-1.6 1.3-3 3-3s3 1.3 3 3h-1.8c0-.7-.6-1.2-1.2-1.2s-1.2.6-1.2 1.2c0 1.2 1.8 1.3 3 2.4.6.5 1 1.3 1 2.1 0 1.6-1.3 3-3 3z"/>
+                </svg>
+
+            </a>
+
+
             </div>
 
 
