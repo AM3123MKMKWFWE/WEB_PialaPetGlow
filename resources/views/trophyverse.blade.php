@@ -26,7 +26,7 @@
         <div class="container mx-auto flex justify-between items-center 2xl:px-16 xl:px-16 lg:px-16 md:px-8 s:px-0">
             <div class="h-auto 2xl:w-[18%] xl:w-[20%] lg:w-[20%] md:w-[27%] s:w-[50%]">
                 <!-- Parent container width set to 10% -->
-                <img src="{{ asset('image/LOGO TRV.png') }}" alt="Logo" class=" h-auto">
+                <img src="{{ asset('image/LOGO-TRV.webp') }}" alt="Logo" class=" h-auto">
                 <!-- Set a fixed width and automatic height -->
             </div>
 
@@ -79,14 +79,11 @@
 
             </div>
             <!-- Gambar Tengah (Swiper) -->
-           <!-- Gambar Tengah (Swiper) -->
-<div
-    class="flex justify-center items-center
+            <div class="flex justify-center items-center
            2xl:mt-[-5rem] xl:mt-[-5rem] lg:mt-[-5rem] md:mt-[-4rem] s:mt-8
            s:w-full ss:w-[100%] md:w-[40%] lg:w-[32%] xl:w-[30%] 2xl:w-[28%]">
-    
-    <div
-        class="swiper trophySwiper w-full mx-auto
+
+                <div class="swiper trophySwiper w-full mx-auto
                max-w-[260px]
                s:max-w-full
                ss:max-w-full
@@ -94,32 +91,32 @@
                lg:max-w-[460px]
                xl:max-w-[500px]">
 
-        <div class="swiper-wrapper">
-            <div class="swiper-slide flex justify-center items-end">
-                <img src="{{ asset('image/Depan-bill.png') }}" alt="Trophy 1"
-                     class="w-full h-auto max-h-[420px] object-contain">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide flex justify-center items-end">
+                            <img src="{{ asset('image/trophyverseUtama/Depan-bill.webp') }}" alt="Trophy 1"
+                                class="w-full h-auto max-h-[420px] object-contain">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-end">
+                            <img src="{{ asset('image/trophyverseUtama/Depan-cat-New.webp') }}" alt="Trophy 2"
+                                class="w-full h-auto max-h-[420px] object-contain">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-end">
+                            <img src="{{ asset('image/trophyverseUtama/Depan-poker.webp') }}" alt="Trophy 3"
+                                class="w-full h-auto max-h-[420px] object-contain">
+                        </div>
+                        <div class="swiper-slide flex justify-center items-end">
+                            <img src="{{ asset('image/trophyverseUtama/Depan-arwana.webp') }}" alt="Trophy 4"
+                                class="w-full h-auto max-h-[420px] object-contain">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-slide flex justify-center items-end">
-                <img src="{{ asset('image/trophyverseUtama/Depan-cat-New.png') }}" alt="Trophy 2"
-                     class="w-full h-auto max-h-[420px] object-contain">
-            </div>
-            <div class="swiper-slide flex justify-center items-end">
-                <img src="{{ asset('image/trophyverseUtama/Depan-poker.png') }}" alt="Trophy 3"
-                     class="w-full h-auto max-h-[420px] object-contain">
-            </div>
-            <div class="swiper-slide flex justify-center items-end">
-                <img src="{{ asset('image/trophyverseUtama/Depan-arwana.png') }}" alt="Trophy 4"
-                     class="w-full h-auto max-h-[420px] object-contain">
-            </div>
-        </div>
-    </div>
-</div>
 
             <!-- gambar kanan -->
             <div class="flex  items-center text-white s:mt-12 ">
                 <div class="">
                     <button>
-                        <img src="{{ asset('image/ARW.png') }}" alt=""
+                        <img src="{{ asset('image/ARW.webp') }}" alt=""
                             class="w-10 md:w-[4rem] lg:w-[4.5rem] s:w-12 h-auto">
                     </button>
                 </div>
@@ -297,17 +294,15 @@
                                     antrian order.</p>
                             </div>
 
-                           <button
-                                type="button"
-                                onclick="copyAndOpenIg()"
+                            <button type="button" onclick="copyAndOpenIg()"
                                 class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4 inline-flex items-center justify-center">
                                 ORDER
                             </button>
                         </div>
 
                         <div class="flex justify-center items-center gap-4 w-full md:w-1/2">
-                            <img src="{{ asset('image/BOX SMALL - MEDIUM.png') }}" alt="Box" class="w-24 md:w-24">
-                            <img src="{{ asset('image/ST-desc.png') }}" alt="Trophy" class="w-36 md:w-40">
+                            <img src="{{ asset('image/BOX-SMALL-MEDIUM.webp') }}" alt="Box" class="w-24 md:w-24">
+                            <img src="{{ asset('image/ST-desc.webp') }}" alt="Trophy" class="w-36 md:w-40">
                         </div>
                     </div>
                 </div>
@@ -331,9 +326,7 @@
                                     antrian order.</p>
                             </div>
 
-                             <button
-                                type="button"
-                                onclick="copyAndOpenIg()"
+                            <button type="button" onclick="copyAndOpenIg()"
                                 class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4 inline-flex items-center justify-center">
                                 ORDER
                             </button>
@@ -341,7 +334,7 @@
                         </div>
 
                         <div class="flex justify-center items-center gap-4 w-full md:w-1/2">
-                            <img src="{{ asset('image/BOX SMALL - MEDIUM.png') }}" alt="Box" class="w-24 md:w-34">
+                            <img src="{{ asset('image/BOX-SMALL-MEDIUM.webp') }}" alt="Box" class="w-24 md:w-34">
                             <img src="{{ asset('image/MT-desc.png') }}" alt="Trophy" class="w-36 md:w-50">
                         </div>
                     </div>
@@ -366,17 +359,15 @@
                                     antrian order.</p>
                             </div>
 
-                            <button
-                                type="button"
-                                onclick="copyAndOpenIg()"
+                            <button type="button" onclick="copyAndOpenIg()"
                                 class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4 inline-flex items-center justify-center">
                                 ORDER
                             </button>
                         </div>
 
                         <div class="flex justify-center items-center gap-4 w-full md:w-1/2">
-                            <img src="{{ asset('image/BOX LARGE.png') }}" alt="Box" class="w-24 md:w-24">
-                            <img src="{{ asset('image/LT-desc.png') }}" alt="Trophy" class="w-36 md:w-60">
+                            <img src="{{ asset('image/BOX-LARGE.webp') }}" alt="Box" class="w-24 md:w-24">
+                            <img src="{{ asset('image/LT-desc.webp') }}" alt="Trophy" class="w-36 md:w-60">
                         </div>
                     </div>
                 </div>
@@ -400,17 +391,15 @@
                                     antrian order.</p>
                             </div>
 
-                            <button
-                                type="button"
-                                onclick="copyAndOpenIg()"
+                            <button type="button" onclick="copyAndOpenIg()"
                                 class="bg-[#FFD586] text-black font-semibold px-8 py-2 rounded-full mt-4 inline-flex items-center justify-center">
                                 ORDER
                             </button>
                         </div>
 
                         <div class="flex justify-center items-center gap-4 w-full md:w-1/2">
-                            <img src="{{ asset('image/BOX SUPREME.png') }}" alt="Box" class="w-24 md:w-24">
-                            <img src="{{ asset('image/SPT-desc.png') }}" alt="Trophy" class="w-36 md:w-50">
+                            <img src="{{ asset('image/BOX-SUPREME.webp') }}" alt="Box" class="w-24 md:w-24">
+                            <img src="{{ asset('image/SPT-desc.webp') }}" alt="Trophy" class="w-36 md:w-50">
                         </div>
                     </div>
                 </div>
@@ -444,27 +433,27 @@
                 <div id="swiperContainerMain" class="swiper-container my-8 overflow-hidden">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/a.jpg') }}" alt="Main Slide"
+                            <img src="{{ asset('image/foto/a.webp') }}" alt="Main Slide"
                                 class="w-full max-w-[600px] h-auto md:h-[300px] lg:h-[400px] xl:h-[450px] object-cover rounded-lg mx-auto">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/ab.jpg') }}" alt="Main Slide"
+                            <img src="{{ asset('image/foto/ab.webp') }}" alt="Main Slide"
                                 class="w-full max-w-[600px] h-auto md:h-[300px] lg:h-[400px] xl:h-[450px] object-cover rounded-lg mx-auto">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/ac.jpg') }}" alt="Main Slide"
+                            <img src="{{ asset('image/foto/ac.webp') }}" alt="Main Slide"
                                 class="w-full max-w-[600px] h-auto md:h-[300px] lg:h-[400px] xl:h-[450px] object-cover rounded-lg mx-auto">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/ad.jpg') }}" alt="Main Slide"
+                            <img src="{{ asset('image/foto/ad.webp') }}" alt="Main Slide"
                                 class="w-full max-w-[600px] h-auto md:h-[300px] lg:h-[400px] xl:h-[450px] object-cover rounded-lg mx-auto">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/af.jpg') }}" alt="Main Slide"
+                            <img src="{{ asset('image/foto/af.webp') }}" alt="Main Slide"
                                 class="w-full max-w-[600px] h-auto md:h-[300px] lg:h-[400px] xl:h-[450px] object-cover rounded-lg mx-auto">
                         </div>
                         <div class="swiper-slide">
-                            <img src="{{ asset('image/foto/ag.jpg') }}" alt="Main Slide"
+                            <img src="{{ asset('image/foto/ag.webp') }}" alt="Main Slide"
                                 class="w-full max-w-[600px] h-auto md:h-[300px] lg:h-[400px] xl:h-[450px] object-cover rounded-lg mx-auto">
                         </div>
                     </div>
@@ -475,7 +464,7 @@
                     <div class="swiper-wrapper">
                         @foreach(['b', 'c', 'd', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'n', 'o'] as $img)
                             <div class="swiper-slide">
-                                <img src="{{ asset('image/foto/' . $img . '.jpg') }}" alt="Small Slide"
+                                <img src="{{ asset('image/foto/' . $img . '.webp') }}" alt="Small Slide"
                                     class="w-40 s:w-20 md:w-52 h-28 s:h-20 md:h-36 object-cover rounded-lg mx-auto">
                             </div>
                         @endforeach
@@ -487,7 +476,7 @@
                     <div class="swiper-wrapper">
                         @foreach(['z', 'x', 'w', 'ab', 'ac', 'ad', 'af', 'ag', 'b'] as $img)
                             <div class="swiper-slide">
-                                <img src="{{ asset('image/foto/' . $img . '.jpg') }}" alt="Small Slide"
+                                <img src="{{ asset('image/foto/' . $img . '.webp') }}" alt="Small Slide"
                                     class="w-40 s:w-20 md:w-52 h-28 s:h-20 md:h-36 object-cover rounded-lg mx-auto">
                             </div>
                         @endforeach
@@ -502,7 +491,7 @@
         <!-- PETA INDONESIA -->
         <div class="flex items-center justify-center mt-12 relative">
             <!-- Peta Indonesia -->
-            <img src="{{ asset('image/IND.png') }}" alt="MAP INDONESIA" class="w-[100%] h-auto">
+            <img src="{{ asset('image/IND.webp') }}" alt="MAP INDONESIA" class="w-[100%] h-auto">
 
             <!-- Avatar 1 -->
             <div class="absolute" style="top: 23%; left: 47%;">
@@ -664,7 +653,7 @@
             class="bg-[#131313] text-white py-4 text-center mb-12 flex flex-col md:flex-row justify-between items-center px-4 md:px-12 space-y-4 md:space-y-0">
 
             <!-- Logo -->
-            <img src="{{ asset('image/LOGO TRV.png') }}" alt="Trophyverse Logo"
+            <img src="{{ asset('image/LOGO-TRV.webp') }}" alt="Trophyverse Logo"
                 class="w-32 md:w-[20%] s:w-[40%] h-auto">
 
             <!-- Teks di tengah -->
@@ -676,56 +665,53 @@
 
             <!-- Ikon -->
             <div class="flex space-x-6">
-                <!-- Instagram -->
-                <a href="https://ig.me/m/trophyverse.id?text=hai%20ingin%20tau%20lebih%20terkait%20trophyverse,%20yuk%20order%20sekarang"
-                    target="_blank" class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 
-                        2xl:h-14 xl:h-14 lg:h-14 md:h-12 s:h-9 
-                        flex items-center justify-center 
-                        rounded-full border-2 border-white 
-                        hover:bg-white hover:text-black 
-                        transition-all">
-                    <i class="fa-brands fa-instagram text-2xl"></i>
-                </a>
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/trophyverse.id/" onclick="openIgDm()"
+        class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 
+               2xl:h-14 xl:h-14 lg:h-14 md:h-12 s:h-9 
+               flex items-center justify-center 
+               rounded-full border-2 border-white 
+               hover:bg-white hover:text-black 
+               transition-all cursor-pointer">
+        <i class="fa-brands fa-instagram text-2xl"></i>
+    </a>
 
-                <!-- Phone -->
-                <!-- <a href="#" target="_blank"
-                    class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 2xl:h-14  xl:h-14 lg:h-14 md:h-12 s:h-9 flex items-center justify-center rounded-full border-2 border-white hover:bg-white hover:text-black transition-all">
-                    <i class="fa-solid fa-phone text-2xl"></i>
-                </a> -->
+    <!-- TikTok -->
+    <a href="https://www.tiktok.com/@trophyverse" target="_blank"
+        class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 
+               2xl:h-14 xl:h-14 lg:h-14 md:h-12 s:h-9 
+               flex items-center justify-center 
+               rounded-full border-2 border-white 
+               hover:bg-white hover:text-black 
+               transition-all">
+        <i class="fa-brands fa-tiktok text-2xl"></i>
+    </a>
 
-                <!-- Tiktok -->
-                <a href="#" target="_blank" class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 
-                        2xl:h-14 xl:h-14 lg:h-14 md:h-12 s:h-9 
-                        flex items-center justify-center 
-                        rounded-full border-2 border-white 
-                        hover:bg-white hover:text-black 
-                        transition-all">
-                    <i class="fa-brands fa-tiktok text-2xl"></i>
-                </a>
+    <!-- Shopee -->
+    <a href="https://s.shopee.co.id/6fZrUQSwUb" target="_blank"
+        class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 
+               2xl:h-14 xl:h-14 lg:h-14 md:h-12 s:h-9 
+               flex items-center justify-center 
+               rounded-full border-2 border-white 
+               hover:bg-white hover:text-black 
+               transition-all">
+        <img src="{{ asset('image/icon/shoppe.webp') }}" alt="Shopee"
+            class="w-7 h-7 object-contain">
+    </a>
 
-                <a href="https://s.shopee.co.id/6fZrUQSwUb" target="_blank" class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 
-          2xl:h-14 xl:h-14 lg:h-14 md:h-12 s:h-9 
-          flex items-center justify-center 
-          rounded-full border-2 border-white 
-          hover:bg-white hover:text-black 
-          transition-all">
+    <!-- Tokopedia -->
+    <a href="https://tk.tokopedia.com/ZSPjraEa7/" target="_blank"
+        class="2xl:w-14 xl:w-14 lg:w-14 md:w-12 s:w-9 
+               2xl:h-14 xl:h-14 lg:h-14 md:h-12 s:h-9 
+               flex items-center justify-center 
+               rounded-full border-2 border-white 
+               hover:bg-white hover:text-black 
+               transition-all">
+        <img src="{{ asset('image/icon/tokopedia.webp') }}" alt="Tokopedia"
+            class="w-7 h-7 object-contain">
+    </a>
+</div>
 
-                    <svg viewBox="0 0 24 24" class="w-6 h-6">
-                        <!-- tas -->
-                        <rect x="5" y="7" width="16" height="14" rx="2" ry="2" fill="white" />
-                        <!-- handle -->
-                        <path d="M9 8c0-1.4 1.3-2.5 3-2.5s3 1.1 3 2.5h1.2C16.2 5.9 14.4 4.5 12 4.5S7.8 5.9 7.8 8H9z"
-                            fill="white" />
-                        <!-- huruf S -->
-                        <text x="13" y="16.2" text-anchor="middle" font-size="6"
-                            font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
-                            fill="black">
-                            S
-                        </text>
-                    </svg>
-
-                </a>
-            </div>
 
 
         </div>
@@ -931,6 +917,10 @@
             loop: true,
             centeredSlides: true,
             slidesPerView: 1,
+            autoplay:{
+                delay:5000,
+                disableOnInteraction:false,
+            },
         });
 
         const navItems = document.querySelectorAll('[data-slide]');
@@ -944,36 +934,42 @@
                 item.classList.add('text-[#FFD586]');
             });
         });
-
-        
     });
+    // function openIgDm() {
+    //     window.open(
+    //         "https://ig.me/m/trophyverse.id",
+    //         "_blank",
+    //         "noopener,noreferrer"
+    //     );
+    // }
 
-    function copyAndOpenIg() {
-        const text = "hai ingin tau lebih terkait trophyverse, yuk order sekarang";
 
-        if (navigator.clipboard && window.isSecureContext) {
-            navigator.clipboard.writeText(text).catch(() => {
-                console.log('Gagal copy ke clipboard, tapi tetap buka IG.');
-            }).finally(() => {
-                window.open(
-                    "https://ig.me/m/trophyverse.id",
-                    "_blank",
-                    "noopener,noreferrer"
-                );
-                alert("Teks sudah dicopy, tinggal paste di chat Instagram ya 🌟");
-            });
-        } else {
-            // fallback: langsung buka IG tanpa copy
-            window.open(
-                "https://ig.me/m/trophyverse.id",
-                "_blank",
-                "noopener,noreferrer"
-            );
-            alert("Silakan ketik pesan: 'hai ingin tau lebih terkait trophyverse, yuk order sekarang'");
-        }
-    }
+    // function copyAndOpenIg() {
+    //     const text = "hai ingin tau lebih terkait trophyverse, yuk order sekarang";
 
-     
+    //     if (navigator.clipboard && window.isSecureContext) {
+    //         navigator.clipboard.writeText(text).catch(() => {
+    //             console.log('Gagal copy ke clipboard, tapi tetap buka IG.');
+    //         }).finally(() => {
+    //             window.open(
+    //                 "https://ig.me/m/trophyverse.id",
+    //                 "_blank",
+    //                 "noopener,noreferrer"
+    //             );
+    //             alert("Teks sudah dicopy, tinggal paste di chat Instagram ya 🌟");
+    //         });
+    //     } else {
+    //         // fallback: langsung buka IG tanpa copy
+    //         window.open(
+    //             "https://ig.me/m/trophyverse.id",
+    //             "_blank",
+    //             "noopener,noreferrer"
+    //         );
+    //         alert("Silakan ketik pesan: 'hai ingin tau lebih terkait trophyverse, yuk order sekarang'");
+    //     }
+    // }
+
+
 
 
 
