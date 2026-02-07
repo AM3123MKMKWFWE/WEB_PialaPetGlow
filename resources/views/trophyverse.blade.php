@@ -281,7 +281,7 @@
                         <div class="w-full md:w-1/2 space-y-3">
                             <p class="text-2xl md:text-4xl font-semibold text-white">Small Trophy</p>
                             <p class="text-base md:text-lg font-futura-light text-[#FFD586]">HEIGHT &lt; 21CM</p>
-                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 175.000 /pcs</p>
+                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 175.901 /pcs</p>
 
                             <div class="mt-4 space-y-2">
                                 <p class="text-sm font-futura-light">Waktu pengerjaan :</p>
@@ -313,7 +313,7 @@
                         <div class="w-full md:w-1/2 space-y-3">
                             <p class="text-2xl md:text-4xl font-semibold text-white">Medium Trophy</p>
                             <p class="text-base md:text-lg font-futura-light text-[#FFD586]">HEIGHT &lt; 30CM</p>
-                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 250.000 /pcs</p>
+                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 250.901 /pcs</p>
 
                             <div class="mt-4 space-y-2">
                                 <p class="text-sm font-futura-light">Waktu pengerjaan :</p>
@@ -346,7 +346,7 @@
                         <div class="w-full md:w-1/2 space-y-3">
                             <p class="text-2xl md:text-4xl font-semibold text-white">Large Trophy</p>
                             <p class="text-base md:text-lg font-futura-light text-[#FFD586]">HEIGHT &lt; 40CM</p>
-                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 350.000 /pcs</p>
+                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 549.901 /pcs</p>
 
                             <div class="mt-4 space-y-2">
                                 <p class="text-sm font-futura-light">Waktu pengerjaan :</p>
@@ -378,7 +378,7 @@
                         <div class="w-full md:w-1/2 space-y-3">
                             <p class="text-2xl md:text-4xl font-semibold text-white">Supreme Trophy</p>
                             <p class="text-base md:text-lg font-futura-light text-[#FFD586]">HEIGHT &lt; 50CM</p>
-                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 450.000 /pcs</p>
+                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 699.901 /pcs</p>
 
                             <div class="mt-4 space-y-2">
                                 <p class="text-sm font-futura-light">Waktu pengerjaan :</p>
