@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('trophyverse');
-// });
-Route::get('/Trophyverse', function () {
+Route::get('/', function () {
     return view('trophyverse');
 });
+// Route::get('/Trophyverse', function () {
+//     return view('trophyverse');
+// });
