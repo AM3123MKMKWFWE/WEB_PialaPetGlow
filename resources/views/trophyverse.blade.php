@@ -281,14 +281,14 @@
                         <div class="w-full md:w-1/2 space-y-3">
                             <p class="text-2xl md:text-4xl font-semibold text-white">Small Trophy</p>
                             <p class="text-base md:text-lg font-futura-light text-[#FFD586]">HEIGHT &lt; 21CM</p>
-                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 175.901 /pcs</p>
+                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 175.000 /pcs</p>
 
                             <div class="mt-4 space-y-2">
                                 <p class="text-sm font-futura-light">Waktu pengerjaan :</p>
                                 <div class="flex flex-col sm:flex-row gap-4">
-                                    <p class="text-sm font-futura-light">Qty 1 - 30 pcs <br> 3-7 Hari Kerja</p>
+                                    <p class="text-sm font-futura-light">Qty 1 - 30 pcs <br> 3 - 7 Hari Kerja</p>
                                     <div class="border-l-2 h-6 s:h-0"></div>
-                                    <p class="text-sm font-futura-light">Qty 50+ <br>10-14 Hari Kerja</p>
+                                    <p class="text-sm font-futura-light">Qty 30+ <br>10 - 14 Hari Kerja</p>
                                 </div>
                                 <p class="text-sm">Waktu bisa berubah-ubah tergantung tingkat kerumitan, jumlah order &
                                     antrian order.</p>
@@ -313,14 +313,14 @@
                         <div class="w-full md:w-1/2 space-y-3">
                             <p class="text-2xl md:text-4xl font-semibold text-white">Medium Trophy</p>
                             <p class="text-base md:text-lg font-futura-light text-[#FFD586]">HEIGHT &lt; 30CM</p>
-                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 250.901 /pcs</p>
+                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 275.000 /pcs</p>
 
                             <div class="mt-4 space-y-2">
                                 <p class="text-sm font-futura-light">Waktu pengerjaan :</p>
                                 <div class="flex flex-col sm:flex-row gap-4">
-                                    <p class="text-sm font-futura-light">Qty 1 - 30 pcs <br> 3-7 Hari Kerja</p>
+                                    <p class="text-sm font-futura-light">Qty 1 - 30 pcs <br> 3 - 7 Hari Kerja</p>
                                     <div class="border-l-2 h-6 s:h-0"></div>
-                                    <p class="text-sm font-futura-light">Qty 50+ <br>10-14 Hari Kerja</p>
+                                    <p class="text-sm font-futura-light">Qty 30+ <br>10 - 14 Hari Kerja</p>
                                 </div>
                                 <p class="text-sm">Waktu bisa berubah-ubah tergantung tingkat kerumitan, jumlah order &
                                     antrian order.</p>
@@ -346,14 +346,14 @@
                         <div class="w-full md:w-1/2 space-y-3">
                             <p class="text-2xl md:text-4xl font-semibold text-white">Large Trophy</p>
                             <p class="text-base md:text-lg font-futura-light text-[#FFD586]">HEIGHT &lt; 40CM</p>
-                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 549.901 /pcs</p>
+                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 550.000 /pcs</p>
 
                             <div class="mt-4 space-y-2">
                                 <p class="text-sm font-futura-light">Waktu pengerjaan :</p>
                                 <div class="flex flex-col sm:flex-row gap-4">
-                                    <p class="text-sm font-futura-light">Qty 1 - 30 pcs <br> 3-7 Hari Kerja</p>
+                                    <p class="text-sm font-futura-light">Qty 1 - 30 pcs <br> 3 - 7 Hari Kerja</p>
                                     <div class="border-l-2 h-6 s:h-0"></div>
-                                    <p class="text-sm font-futura-light">Qty 50+ <br>10-14 Hari Kerja</p>
+                                    <p class="text-sm font-futura-light">Qty 30+ <br>10 - 14 Hari Kerja</p>
                                 </div>
                                 <p class="text-sm">Waktu bisa berubah-ubah tergantung tingkat kerumitan, jumlah order &
                                     antrian order.</p>
@@ -378,14 +378,14 @@
                         <div class="w-full md:w-1/2 space-y-3">
                             <p class="text-2xl md:text-4xl font-semibold text-white">Supreme Trophy</p>
                             <p class="text-base md:text-lg font-futura-light text-[#FFD586]">HEIGHT &lt; 50CM</p>
-                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 699.901 /pcs</p>
+                            <p class="text-xl md:text-3xl font-bold mt-4 md:mt-8">IDR 700.000 /pcs</p>
 
                             <div class="mt-4 space-y-2">
                                 <p class="text-sm font-futura-light">Waktu pengerjaan :</p>
                                 <div class="flex flex-col sm:flex-row gap-4">
-                                    <p class="text-sm font-futura-light">Qty 1 - 30 pcs <br> 3-7 Hari Kerja</p>
+                                    <p class="text-sm font-futura-light">Qty 1 - 30 pcs <br> 3 - 7 Hari Kerja</p>
                                     <div class="border-l-2 h-6 s:h-0"></div>
-                                    <p class="text-sm font-futura-ligh">Qty 50+ <br>10-14 Hari Kerja</p>
+                                    <p class="text-sm font-futura-ligh">Qty 30+ <br>10 - 14 Hari Kerja</p>
                                 </div>
                                 <p class="text-sm">Waktu bisa berubah-ubah tergantung tingkat kerumitan, jumlah order &
                                     antrian order.</p>
